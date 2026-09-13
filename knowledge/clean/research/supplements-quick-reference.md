@@ -1,3 +1,9 @@
+---
+type: research
+maintained: true
+topics: [supplements]
+---
+
 # Supplements — Quick Reference (honesty tier)
 
 ## Tier 1 — strong evidence

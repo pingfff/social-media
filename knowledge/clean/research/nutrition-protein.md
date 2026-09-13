@@ -1,3 +1,10 @@
+---
+type: research
+maintained: true
+topics: [nutrition, protein]
+series: [cutting-101, hypertrophy-101]
+---
+
 # Protein — Evidence Summary
 
 ## Key numbers (daily total)

@@ -1,3 +1,10 @@
+---
+type: research
+maintained: true
+topics: [program-design, programming]
+series: program-design-101
+---
+
 # Program Design — Evidence Summary
 
 ## Split selection

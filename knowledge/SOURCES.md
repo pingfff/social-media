@@ -10,8 +10,8 @@
 ## Blocked (paste manually if needed)
 
 - Generation Iron (generationiron.com) — 403 blocked
-- Reddit — login wall (see reddit/WISHLIST.md)
-- YouTube, Instagram — JS apps, transcripts must be pasted
+- Reddit — login wall (see WISHLIST.md)
+- Instagram — JS app, paste manually into `raw/`
 
 ## Other candidates to test when needed
 

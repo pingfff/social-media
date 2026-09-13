@@ -1,3 +1,10 @@
+---
+type: research
+maintained: true
+topics: [fat-loss, cutting]
+series: cutting-101
+---
+
 # Fat Loss Fundamentals — Evidence Summary
 
 ## Deficit setup

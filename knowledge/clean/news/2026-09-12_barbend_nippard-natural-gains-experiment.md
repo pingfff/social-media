@@ -1,9 +1,15 @@
-# Jeff Nippard's 14-Month Natural Gains Experiment
-
+---
+type: news
 source: https://barbend.com/news/how-much-muscle-did-jeff-nippard-gain-in-14-months-naturally/
 fetched: 2026-09-12
-why: fuels Hypertrophy 101 + soft-season arc; realistic natural gain rates
-for an intermediate/advanced audience
+topics: [natural-gains, hypertrophy, bulking]
+series: [hypertrophy-101]
+---
+
+# Jeff Nippard's 14-Month Natural Gains Experiment
+
+Note: fuels Hypertrophy 101 + soft-season arc; realistic natural gain
+rates for an intermediate/advanced audience.
 
 ## The experiment
 

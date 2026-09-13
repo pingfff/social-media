@@ -1,3 +1,10 @@
+---
+type: research
+maintained: true
+topics: [hypertrophy, volume, training]
+series: [hypertrophy-101, form-fix]
+---
+
 # Hypertrophy Training — Evidence Summary
 
 ## Volume

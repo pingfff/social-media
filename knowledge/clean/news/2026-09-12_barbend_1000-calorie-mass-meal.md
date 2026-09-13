@@ -1,9 +1,15 @@
-# Fouad Abiad's 1,000-Calorie Mass Meal
-
+---
+type: news
 source: https://barbend.com/news/1000-calorie-meal-mass-gains/
 fetched: 2026-09-12
-why: what-I-eat format fuel for soft-season/muscle-gaining content;
-chicken-and-rice running gag synergy
+topics: [bulking, nutrition, what-i-eat]
+series: [hypertrophy-101]
+---
+
+# Fouad Abiad's 1,000-Calorie Mass Meal
+
+Note: what-I-eat format fuel for soft-season/muscle-gaining content;
+chicken-and-rice running gag synergy.
 
 ## Key points
 
