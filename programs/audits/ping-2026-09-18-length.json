@@ -1,0 +1,10 @@
+{
+  "target_min": 75,
+  "sessions": {
+    "U1": {"sets": 15, "superset_pairs": 0, "exercises": 6},
+    "U2": {"sets": 17, "superset_pairs": 2, "exercises": 8},
+    "L (required only)": {"sets": 14, "superset_pairs": 2, "exercises": 6},
+    "L (+optional calves/abs)": {"sets": 18, "superset_pairs": 2, "exercises": 8},
+    "U3": {"sets": 17, "superset_pairs": 2, "exercises": 7}
+  }
+}

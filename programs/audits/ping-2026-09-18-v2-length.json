@@ -1,0 +1,9 @@
+{
+  "target_min": 75,
+  "sessions": {
+    "Mon U1": {"sets": 15, "superset_pairs": 0, "exercises": 6},
+    "Tue L": {"sets": 14, "superset_pairs": 2, "exercises": 6},
+    "Thu U2": {"sets": 17, "superset_pairs": 2, "exercises": 8},
+    "Fri U3": {"sets": 17, "superset_pairs": 2, "exercises": 7}
+  }
+}

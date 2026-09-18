@@ -5,11 +5,19 @@
 ## Step 0: Assess the Current State FIRST
 
 Before choosing anything new [T17, T18]:
+0. **No structured current program?** → skip the audit; start volumes at
+   mid-band (conservative: middle of the 10–20 growth band for priorities,
+   below it for everything else) and let the logbook calibrate from week 1.
 1. Audit **current volume per muscle per week** from the existing program. A new split that REDUCES your volume is an atrophy program.
 2. Audit the **logbook**: which muscles/lifts have progressed in the last months? Which stalled? (Visuals + load/reps)
 3. Audit **session quality**: do back-half exercises still progress? Do sessions blow past 1.5 h?
 
 ## Decision Tree: Choosing a Split
+
+**Precedence rules:** evaluate top to bottom — the first YES wins. However,
+"Progressing on all lifts? → change NOTHING" [T16] overrides every
+structure-change branch; while progressing, only the fatigue/schedule
+branches (sessions too long, schedule can't do fixed days) may fire.
 
 ```
 START
@@ -41,6 +49,14 @@ START
 ├─ One muscle/group badly lagging?
 │   └─ → Specialization: cut a strong area to maintenance (~bare-bones day),
 │        reallocate its volume; lagging part 2–3×/week [T17, T18]
+│        (guardrail: one priority ideally, two at most, and the cut volume
+│        must fund the added sets — volume is reallocated, not conjured)
+│
+├─ No condition fired (healthy intermediate, no complaints, normal
+│   schedule and recovery)? → YES → Upper/Lower — the intermediate
+│        default [T22: "the sweet spot for intermediates"], scaled to the
+│        days actually available; the specialization branch may reshape
+│        this container (e.g. 3 uppers + 1 lower for an upper priority)
 │
 └─ Advanced (10+ years, everything plateaued)?
     └─ → "Inside-out" programming: start from per-muscle volume needs,

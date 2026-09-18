@@ -1,1 +1,15 @@
-.dmg
+# macOS
+.DS_Store
+*.dmg
+
+# Windows
+Thumbs.db
+
+# Editors / OS junk
+*.swp
+*~
+.idea/
+.vscode/
+
+# Scratch
+*.tmp

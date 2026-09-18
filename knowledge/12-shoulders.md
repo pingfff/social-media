@@ -1,6 +1,6 @@
 # Shoulder Training: Front, Side, Rear Delts
 
-*Source: Program Design/shoulderes/1–6 (front/side delt guides, Nippard+Israetel top-3, boulder-shoulders tips, rear-delt tier list w/ moment-arm science, Meadows shoulder tips)*
+*Source: Program Design/shoulders/1–6 (front/side delt guides, Nippard+Israetel top-3, boulder-shoulders tips, rear-delt tier list w/ moment-arm science, Meadows shoulder tips)*
 
 ## Anatomy & Priorities
 
