@@ -2,7 +2,7 @@
 """Fetch YouTube auto-generated captions directly (no audio download).
 Usage: fetch_transcript.py <videoId or URL> <output.txt> [--keep-dupes]
 Collapses YouTube's scrolling-duplicate caption artifacts; output is raw
-lowercase-ish text matching the house Program Design/ transcript style."""
+lowercase-ish text matching the house raw/ transcript style."""
 import sys, re
 
 def clean(segments):

@@ -9,7 +9,7 @@ of truth for social-media content, coaching programs, and program-design Q&A.
 
 | Path | Contents |
 |---|---|
-| `Program Design/` | Raw transcripts — batch 1 (`transcript1–23.txt`, general programming), batch 2 (bodypart folders: `arms/`, `back/`, `chest/`, `legs/`, `shoulders/`), batch 3 (`Peak Week/`, cited `[PW#]`/`[W#]`) |
+| `raw/` | Raw transcripts — batch 1 (`transcript1–23.txt`, general programming), batch 2 (bodypart folders: `arms/`, `back/`, `chest/`, `legs/`, `shoulders/`), batch 3 (`Peak Week/`, cited `[PW#]`/`[W#]`) |
 | `knowledge/` | Distilled topic notes: `training/` (programming + muscle-specific, `01–13`), `bodybuilding/` (contest-prep/peak-week, five-section schema — see its README) |
 | `knowledge/08-source-map.md` | Traceability index: each transcript's topic, what it feeds, and the catalogue of known contradictions between sources |
 | `content/` | Instagram content built from the knowledge base: series plan, episode scripts, and the graphics system (`peak-week-graphics/html/` is the source of truth; rendered PNGs are git-ignored build artifacts) |
@@ -21,8 +21,8 @@ of truth for social-media content, coaching programs, and program-design Q&A.
 
 ## Conventions
 
-- Claims in `knowledge/` cite their sources: `[T4]` → `Program Design/transcript4.txt`;
-  `[back/7]` → `Program Design/back/7.txt`; `[PW3]` → `Program Design/Peak Week/transcript3.txt`.
+- Claims in `knowledge/` cite their sources: `[T4]` → `raw/transcript4.txt`;
+  `[back/7]` → `raw/back/7.txt`; `[PW3]` → `raw/Peak Week/transcript3.txt`.
 - Quantitative claims live in the `Protocols & Numbers` tables of
   `knowledge/bodybuilding/`; downstream content (scripts, graphics) takes
   numbers from those tables, not prose.

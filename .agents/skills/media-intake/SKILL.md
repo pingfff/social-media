@@ -1,6 +1,6 @@
 ---
 name: media-intake
-description: Finds, downloads, and transcribes fitness/bodybuilding source videos into raw transcripts for the knowledge base — YouTube search via API, audio download via yt-dlp, local transcription via faster-whisper. Use when the user wants to add a new video/source/transcript to the knowledge base, asks to find videos on a peak-week/prep/training topic, or hands over an audio/video file to transcribe into Program Design/.
+description: Finds, downloads, and transcribes fitness/bodybuilding source videos into raw transcripts for the knowledge base — YouTube search via API, audio download via yt-dlp, local transcription via faster-whisper. Use when the user wants to add a new video/source/transcript to the knowledge base, asks to find videos on a peak-week/prep/training topic, or hands over an audio/video file to transcribe into raw/.
 ---
 
 # Media Intake
@@ -97,9 +97,9 @@ pass garbles key terms.
 
 ### 5. File it (only after user confirms the source is worth adding)
 
-- Muscle-specific → `Program Design/<bodypart>/<next N>.txt`;
-  peak week/prep → `Program Design/Peak Week/transcript<next N>.txt`;
-  general → `Program Design/transcript<next N>.txt` (use `ls -v`, never renumber).
+- Muscle-specific → `raw/<bodypart>/<next N>.txt`;
+  peak week/prep → `raw/Peak Week/transcript<next N>.txt`;
+  general → `raw/transcript<next N>.txt` (use `ls -v`, never renumber).
 - Add a row to the right table in `knowledge/08-source-map.md` (topic,
   what it feeds) and note the citation tag the file will carry.
 - Tell the user the file is staged and that `knowledge-distiller` (or a
@@ -107,7 +107,7 @@ pass garbles key terms.
 
 ## Rules
 
-- Never enter a source into `Program Design/` without explicit user
+- Never enter a source into `raw/` without explicit user
   confirmation of that specific video.
 - Do not edit existing transcripts; do not renumber files.
 - Keep downloads and temp audio out of the repo tree (use /tmp).

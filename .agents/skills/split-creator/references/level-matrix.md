@@ -3,7 +3,7 @@
 Training-age level is a **profile that differentiates the whole program
 structure**, not a parameter tweak on one stage. Apply this matrix after the
 intake, before any stage of the design pipeline. Citations as in
-`knowledge/08-source-map.md` (`[T#]` = `Program Design/transcript#.txt`).
+`knowledge/08-source-map.md` (`[T#]` = `raw/transcript#.txt`).
 
 Levels (hypertrophy ladder, per `knowledge/training/07`):
 

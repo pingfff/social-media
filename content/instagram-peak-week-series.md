@@ -1,6 +1,6 @@
 # Instagram Series: Bodybuilding Peak Week — Complete Series Plan
 
-*Built from `knowledge/bodybuilding/01–06`. Citations: [PW#] transcripts, [W#] websites in `Program Design/Peak Week/`.*
+*Built from `knowledge/bodybuilding/01–06`. Citations: [PW#] transcripts, [W#] websites in `raw/Peak Week/`.*
 
 **Series logic:** four arcs — (I) the fundamentals of the three levers,
 (II) the looks on stage and the loading strategies, (III) the failure modes,

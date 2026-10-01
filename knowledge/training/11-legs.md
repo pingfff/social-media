@@ -1,6 +1,6 @@
 # Leg Training: Quads, Hamstrings, Glutes, Calves
 
-*Source: Program Design/legs/1–3 (Nippard 365-day leg day, Nippard PPL lower day, Joe Linhardt leg architecture)*
+*Source: raw/legs/1–3 (Nippard 365-day leg day, Nippard PPL lower day, Joe Linhardt leg architecture)*
 
 ## Anatomy & Head-Specific Targeting
 

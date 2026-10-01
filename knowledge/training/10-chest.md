@@ -1,6 +1,6 @@
 # Chest Training
 
-*Source: Program Design/chest/1–3 (10 tips video, sternum-angle individualization, pro push-day resistance-profile system)*
+*Source: raw/chest/1–3 (10 tips video, sternum-angle individualization, pro push-day resistance-profile system)*
 
 ## Anatomy & Individual Structure
 

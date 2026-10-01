@@ -1,6 +1,6 @@
 #!/bin/bash
 # Transcribe a media file to a raw transcript (no punctuation expected — matches
-# the existing Program Design/ transcript style).
+# the existing raw/ transcript style).
 # Usage: transcribe.sh <input audio/video> <output txt> [model]
 # Models: base (fast, default) | small (better) | medium (slow, best)
 set -euo pipefail

@@ -1,6 +1,6 @@
 # Back Training: Lats, Traps, Rear Delts, Erectors
 
-*Source: Program Design/back/1–8 (Nippard anatomy guides, J3U, Rambod/Vissers prep, IFBB pro "pull day" system, Meadows 21 tips)*
+*Source: raw/back/1–8 (Nippard anatomy guides, J3U, Rambod/Vissers prep, IFBB pro "pull day" system, Meadows 21 tips)*
 
 ## Anatomy & Function Map
 

@@ -12,7 +12,7 @@ program-design questions. There is no code, no build system, no tests.
 
 ## Layout
 
-- `Program Design/` — raw transcripts, verbatim. Do not edit these.
+- `raw/` — raw transcripts, verbatim. Do not edit these.
   - `transcript1.txt` … `transcript23.txt` — batch 1: general program design.
   - `arms/`, `back/`, `chest/`, `legs/`, `shoulders/` — batch 2: muscle-specific
     transcripts, numbered per folder.
@@ -50,14 +50,14 @@ program-design questions. There is no code, no build system, no tests.
   - `reel-graphics/` — vertical Instagram graphics via the HTML/Chromium
     pipeline in `content/peak-week-graphics/html/`.
   - `media-intake/` — find/download/transcribe new source videos into
-    `Program Design/` (popularity-ranked deep search, caption fetch,
+    `raw/` (popularity-ranked deep search, caption fetch,
     local-whisper fallback, human curation gate).
 - `.config/` — git-ignored local config (YouTube API key, static ffmpeg).
 
 ## Citation conventions (critical)
 
-- `[T4]` means `Program Design/transcript4.txt`.
-- `[back/7]`, `[arms/2]` etc. mean `Program Design/<bodypart>/<n>.txt`.
+- `[T4]` means `raw/transcript4.txt`.
+- `[back/7]`, `[arms/2]` etc. mean `raw/<bodypart>/<n>.txt`.
 - **Every claim in `knowledge/` must carry a transcript citation.** Never add
   uncited claims, and never fabricate transcript content — if a fact isn't in
   a transcript, it doesn't belong in the knowledge base.
@@ -82,7 +82,7 @@ Also follow the skill's output spec
 (`.agents/skills/split-creator/references/output-spec.md`) for any generated
 program: sections, session tables, volume audit, no prescribed weights.
 
-1. Drop the new transcript into the right place in `Program Design/`
+1. Drop the new transcript into the right place in `raw/`
    (a bodypart subfolder if muscle-specific, else the next `transcriptN.txt`).
 2. Add a row to the appropriate table in `knowledge/08-source-map.md`
    (topic + which knowledge files it feeds).
@@ -92,9 +92,7 @@ program: sections, session tables, volume audit, no prescribed weights.
 
 ## Gotchas
 
-- The directory `Program Design` contains a space — always quote it in shell
-  commands (`"Program Design/transcript1.txt"`).
-- Filenames in `Program Design/` sort lexically (`transcript10` before
+- Filenames in `raw/` sort lexically (`transcript10` before
   `transcript2`); use version-sort (`ls -v`) when order matters.
 - This is general fitness information for content creation, not medical
   advice; keep any generated content framed accordingly.

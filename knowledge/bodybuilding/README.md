@@ -8,8 +8,8 @@ Knowledge files for contest-prep and bodybuilding-specific content
 - Same citation rules as the parent `knowledge/` directory: every claim
   carries a transcript citation; never fabricate transcript content.
 - New transcripts about bodybuilding prep go into a subfolder under
-  `Program Design/` and get a row in `knowledge/08-source-map.md`.
-  Peak-week material lives in `Program Design/Peak Week/` and is cited as
+  `raw/` and get a row in `knowledge/08-source-map.md`.
+  Peak-week material lives in `raw/Peak Week/` and is cited as
   `[PW#]` (transcripts) and `[W#]` (website link files).
 - Files here are numbered in their own sequence starting at `01-`, independent
   of the parent directory's numbering.

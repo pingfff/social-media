@@ -1,6 +1,6 @@
 # Arm Training: Biceps, Triceps, Brachialis
 
-*Source: Program Design/arms/1–3 (anti-gimmick arm guide, J3U 4-exercise arsenal, 18-inch arm specialization)*
+*Source: raw/arms/1–3 (anti-gimmick arm guide, J3U 4-exercise arsenal, 18-inch arm specialization)*
 
 ## Anatomy & Head-Targeting Reality
 

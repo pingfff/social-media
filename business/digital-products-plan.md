@@ -43,7 +43,7 @@ content pipeline (series/, storyboard/) — before committing to heavy builds
     substitution guide, logging sheets.
   - Deliver as designed PDF (can be produced via the pdf skill) + optional
     spreadsheet tracker (xlsx skill).
-- **P1.2 Entry product ($15–25): "Program Design Toolkit."**
+- **P1.2 Entry product ($15–25): "raw Toolkit."**
   Training log spreadsheet + set/rep/RIR reference cards + split-selection
   decision tree (already exists as `07-program-selection-decision-tree.md`).
 - **P1.3 Free lead magnet:**
@@ -110,7 +110,7 @@ subscription tier via RevenueCat. Nothing else in v1.
 | Product | Price | Phase |
 |---|---|---|
 | Split-selection cheat sheet | Free (email) | 1 |
-| Program Design Toolkit | $15–25 | 1 |
+| raw Toolkit | $15–25 | 1 |
 | Flagship 12-week program | $49–79 | 1 |
 | Membership | $10–25/mo | 2 |
 | Coach course | $200–500 | 4 |

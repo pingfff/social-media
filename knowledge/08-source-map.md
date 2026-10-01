@@ -1,6 +1,6 @@
 # Source Map
 
-Traceability of claims back to transcripts. `T#` = `transcript#.txt` in `Program Design/`.
+Traceability of claims back to transcripts. `T#` = `transcript#.txt` in `raw/`.
 
 | # | Approx. Topic / Channel Type | Contributes Most To |
 |---|---|---|
@@ -30,7 +30,7 @@ Traceability of claims back to transcripts. `T#` = `transcript#.txt` in `Program
 
 ## Batch 2 — Muscle-Specific Transcripts (Sep 2026)
 
-`B#/X` = `Program Design/<bodypart>/X.txt`.
+`B#/X` = `raw/<bodypart>/X.txt`.
 
 ### arms/
 | # | Topic | Contributes To |
@@ -92,8 +92,8 @@ Traceability of claims back to transcripts. `T#` = `transcript#.txt` in `Program
 
 ## Batch 3 — Peak Week Transcripts & Websites (Sep 2026)
 
-`PW#` = `Program Design/Peak Week/transcript#.txt` (transcript10 is empty).
-`W#` = `Program Design/Peak Week/website#.txt` (URL list). Feeds `knowledge/bodybuilding/01-06`.
+`PW#` = `raw/Peak Week/transcript#.txt` (transcript10 is empty).
+`W#` = `raw/Peak Week/website#.txt` (URL list). Feeds `knowledge/bodybuilding/01-06`.
 
 | # | Topic / Speaker | Contributes To |
 |---|---|---|
