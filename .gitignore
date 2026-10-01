@@ -23,3 +23,6 @@ Thumbs.db
 
 # rendered graphics (regenerable via content/peak-week-graphics/html/)
 content/peak-week-graphics/episode */**.png
+
+# moved to Desktop (separate project)
+pingliftsfitness-site/
