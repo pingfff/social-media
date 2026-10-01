@@ -89,3 +89,41 @@ Traceability of claims back to transcripts. `T#` = `transcript#.txt` in `Program
 10. **Calf training:** legs/1 (dedicated volume + stretch holds) vs legs/3 (gym work mostly tendon health; growth from life load).
 11. **RIR:** back/2 (prescribed RIR makes people undertrain; set 2 to failure) and chest/1/3, shoulders/3 (0 RIR on machines) vs 2–3 RIR baseline — converging theme: machines/cables permit failure, heavy compounds don't.
 12. **Lengthened-partials hype:** back/2 (no difference in trained lifters — tempered) vs shoulders/4, chest/2 (stretch position = most important ROM).
+
+## Batch 3 — Peak Week Transcripts & Websites (Sep 2026)
+
+`PW#` = `Program Design/Peak Week/transcript#.txt` (transcript10 is empty).
+`W#` = `Program Design/Peak Week/website#.txt` (URL list). Feeds `knowledge/bodybuilding/01-06`.
+
+| # | Topic / Speaker | Contributes To |
+|---|---|---|
+| PW1 | Rico (natural, coached by Cliff Wilson): aggressive depletion + 1,000 g rapid backload, daily check-ins | 01, 03 |
+| PW2 | John Meadows: "peak week is largely hogwash" — steady water/sodium, anti-diuretic, anti-depletion | 01, 02, 03, 06 |
+| PW3 | J3U "one day out": flat/full/spilled model, meal-by-meal tuning, stage-timing scenarios | 01, 02, 03, 04 |
+| PW4 | Competitor vlog: traditional water load + keto depletion + sodium cut protocol | 02, 03 |
+| PW5 | J3U After Hours: diuretic horror stories (Dyazide, HCTZ, renal failure), coach accountability | 02, 06 |
+| PW6 | John Jewett (J3U): fatigue/cortisol causes of water retention; cardio-to-steps, sleep, travel | 01, 04 |
+| PW7 | John Jewett (J3U): fluid compartments, why water/sodium cuts fail, fullness formula | 02, 06 |
+| PW8 | Israetel + Jared Feather (RP): natural peaking (protein/carb/fat/water/sodium), pump-up, post-show | 01, 03, 04, 05 |
+| PW9 | Paul Revelia: protocol comparison, linear progressive loading, show day | 01, 03, 04, 05 |
+| PW10 | (empty file — no content) | — |
+| PW11 | Paul Revelia: "Science of Peaking" — MASS article review, front/back/linear load comparison | 01, 03 |
+| PW12 | Layne Norton: Klemczewski camp recap — army sodium study, anti guru-protocol | 01, 02, 06 |
+| PW13 | Natural competitor: personal backload protocol for a two-day show; pump-up/tanning logistics | 03, 04, 05 |
+| PW14 | Klemczewski + Atkinson: carbs + water "sledgehammers", 3×/day photos | 02, 03, 04 |
+| PW15 | Klemczewski + Atkinson: sodium + potassium management, Morton Lite Salt | 02, 06 |
+| PW16 | Klemczewski + Atkinson: show-day sodium routine, over-pumping | 02, 05 |
+| PW17 | Klemczewski + Atkinson: protein/fat manipulation, glycogen-sparing fats, runaway-metabolism brake | 03 |
+| PW18 | Klemczewski solo: sodium physiology/timing, coaching insight | 02, 04, 05 |
+| PW19 | Klemczewski + Atkinson: water timing on show day, case studies, remote coaching | 02, 04, 05, 06 |
+| W1 | Jacked Factory: ultimate peak-week guide + sample day-by-day plan | 01, 02, 03, 04, 05 |
+| W2 | Team USA Physique: seven peaking strategies catalogued by risk vs reward | 01, 03, 06 |
+
+### New contradictions (Peak Week)
+
+13. **Depletion:** hard keto/carb depletion + rapid backload [PW1][PW4][W2-Rapid] vs "hard depletions are a mistake; gradual carb increase" [PW2][PW18] vs linear load with no depletion [PW11][PW9]. Context: athlete size (big muscles can't refill overnight), coach expertise, carb-response data from prep.
+14. **Water cutting:** load 9.5–10.5 L then cut [PW1] / 2 gal then cut [PW4] / mild early-week elevation then normalize [PW8] vs never cut — keep constant, small Friday adjustments [PW2][PW3][PW5][PW12][PW19][W1].
+15. **Sodium:** cut Thursday then re-add Friday [PW4] vs keep constant all week and scale up with the carb load [PW2][PW3][PW7][PW12][PW15].
+16. **Creatine during peak week:** discontinue [PW1] vs continue (intramuscular water is fine) [PW4].
+17. **Diuretics:** rejected outright by every source [PW2][PW5][PW7][PW12]; no contradiction — unanimous. Residual disagreement is only about tiny between-rounds doses on long show days [PW5].
+18. **Potassium tablets:** W1's sample plan prescribes 100 mg potassium supplements with specific meals [W1] vs PW15/PW18 "avoid 99 mg potassium tablets" — an unnecessary variable affecting kidneys and aldosterone, "can cause a heart attack" when combined with water cuts [PW15][PW18].
