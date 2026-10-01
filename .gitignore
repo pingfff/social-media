@@ -4,6 +4,7 @@
 
 # Windows
 Thumbs.db
+desktop.ini
 
 # Editors / OS junk
 *.swp
@@ -16,6 +17,11 @@ Thumbs.db
 
 # Secrets
 .config/
+.env
+
+# Python
+__pycache__/
+*.pyc
 
 # Build artifacts / env state
 .video_agent/
@@ -23,6 +29,9 @@ Thumbs.db
 
 # rendered graphics (regenerable via content/peak-week-graphics/html/)
 content/peak-week-graphics/episode */**.png
+
+# legacy master-branch research archive
+knowledge/raw/
 
 # moved to Desktop (separate project)
 pingliftsfitness-site/

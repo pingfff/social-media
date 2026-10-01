@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "read": {
+      "*": "allow",
+      "knowledge/raw/**": "deny",
+      "knowledge\\raw\\**": "deny",
+      "**/knowledge/raw/**": "deny",
+      "**\\knowledge\\raw\\**": "deny",
+      "C:\\Users\\USER\\Desktop\\Instagram\\knowledge\\raw\\**": "deny"
+    }
+  }
+}
