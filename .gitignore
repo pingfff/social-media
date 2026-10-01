@@ -13,3 +13,13 @@ Thumbs.db
 
 # Scratch
 *.tmp
+
+# Secrets
+.config/
+
+# Build artifacts / env state
+.video_agent/
+.zcode/
+
+# rendered graphics (regenerable via content/peak-week-graphics/html/)
+content/peak-week-graphics/episode */**.png

@@ -96,6 +96,19 @@ the knowledge file(s) that consume the answer.
 
 **Q20. Anything else the program should respect?** ____ *→ adherence; the consistency rule beats optimization*
 
+## I. App selection (order: level → duration → split type)
+
+Mirrors the app's template-selection order. The decision tree still
+validates these answers — a preference that contradicts the tree
+(e.g. beginner + PPL, or a duration the level matrix rejects) is surfaced
+rather than silently honored.
+
+**Q21. Split-type preference?** *→ 03/07; validated against the decision tree*
+  a) full body  b) upper/lower  c) PPL  d) hybrid (U/L + PPL)
+
+**Q22. Program length?** *→ 04 block structure; validated against the level matrix*
+  a) 4 wk  b) 5 wk (4+1 deload)  c) 8 wk  d) 12 wk  e) 16 wk
+
 ---
 
 ## Defaults (used when an answer is missing — always disclose in the program)
@@ -105,6 +118,8 @@ the knowledge file(s) that consume the answer.
 | Q12 near-failure habits | ~2–3 RIR baseline; machines/cables may go to failure |
 | Q13 recovery budget | Average — no aggressive high-frequency designs |
 | Q14 calories | Maintenance |
-| Q18 frequency preference | Split-type defaults from `knowledge/03` |
+| Q18 frequency preference | Split-type defaults from `knowledge/training/03` |
 | Q19 deload preference | Scheduled deload every 4–6 weeks by program stressor (T15) |
+| Q21 split-type preference | Decision tree picks the container |
+| Q22 program length | 5 wk (4 overload + 1 deload), adjusted to the level matrix |
 | Q8–10 audit details | Ask once; if unknown, design conservatively and flag the assumption |

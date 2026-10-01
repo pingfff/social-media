@@ -16,13 +16,43 @@ program-design questions. There is no code, no build system, no tests.
   - `transcript1.txt` … `transcript23.txt` — batch 1: general program design.
   - `arms/`, `back/`, `chest/`, `legs/`, `shoulders/` — batch 2: muscle-specific
     transcripts, numbered per folder.
-- `knowledge/` — distilled, numbered topic files (`01-…` through `13-…`).
+  - `Peak Week/` — batch 3: peak-week / contest-prep-peak transcripts
+    (`transcriptN.txt`, cited as `[PW#]`) plus `websiteN.txt` link files
+    (cited as `[W#]`). Distilled into `knowledge/bodybuilding/01-06`.
+- `knowledge/` — distilled, numbered topic files.
+  - `training/` — `01-…` through `13-…`: programming and muscle-specific
+    topics (principles, variables, program styles, progression, exercise
+    selection, recovery, decision tree, then back/chest/legs/shoulders/arms).
+  - `bodybuilding/` — bodybuilding-prep topics, own `01-…` numbering, all
+    following the five-section schema (Principles / Protocols & Numbers /
+    Quotes / Contradictions & Context / Gaps — see its README). Quantitative
+    claims live in the Protocols & Numbers tables; downstream content
+    (scripts, graphics) must take numbers from those tables, not prose.
   - `08-source-map.md` is the traceability index: transcript → topic mapping
     plus a list of known contradictions between sources. Keep it current.
-- `.agents/skills/split-creator/` — the workout-split design skill
-  (intake interview → decision-tree pipeline → program output). Programs are
-  generated into `programs/`, lifter profiles into `programs/profiles/`.
-  Run via `/skill:split-creator` or by asking for a split/program design.
+- `content/` — social-media content built from the knowledge base.
+  - `instagram-peak-week-series.md` — the 17-episode series plan.
+  - `peak-week-scripts/` — one script per episode (hook, timestamped beats,
+    captions with coaching CTA).
+  - `peak-week-graphics/` — the graphics system: `html/` holds the design
+    system + per-episode specs + `render.py` (the source of truth — re-render
+    with `cd html && python3 render.py spec_epN`); `episode N/` folders hold
+    rendered 1080x1920 PNGs, which are **git-ignored build artifacts**.
+- `programs/` — generated workout programs (`programs/audits/`,
+`programs/profiles/`) from the split-creator skill.
+- `business/` — coaching business deliverables (PDF guides, flagship program
+  manuscripts + build scripts).
+- `pingliftsfitness-site/` — website assets.
+- `slides/` — slide decks and their generators.
+- `.agents/skills/` — repo skills:
+  - `split-creator/` — workout-split design (intake → decision tree →
+    program into `programs/`).
+  - `reel-graphics/` — vertical Instagram graphics via the HTML/Chromium
+    pipeline in `content/peak-week-graphics/html/`.
+  - `media-intake/` — find/download/transcribe new source videos into
+    `Program Design/` (popularity-ranked deep search, caption fetch,
+    local-whisper fallback, human curation gate).
+- `.config/` — git-ignored local config (YouTube API key, static ffmpeg).
 
 ## Citation conventions (critical)
 

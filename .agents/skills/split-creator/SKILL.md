@@ -18,8 +18,8 @@ final program document.
    wait for the user to ask.** Interview them in-session with AskUserQuestion
    using the questionnaire in [assets/intake.md](assets/intake.md):
    - Ask the ★ hard-required questions first (Q1, Q3, Q5, Q6, Q15, Q16) in
-     one or two batches, then Q2/Q4/Q7/Q12, then Q8–Q11, then Q13–Q20.
-     Never dump all 20 at once.
+     one or two batches, then Q2/Q4/Q7/Q12, then Q8–Q11, then Q13–Q22.
+     Never dump all questions at once.
    - AskUserQuestion limits you to 4 questions per call with up to 4 options
      each — for questions with more options (Q1, Q5, Q6, Q15) fold the
      extras into the "Other" free-text choice, which the user can fill with
@@ -31,7 +31,7 @@ final program document.
 
    ```bash
    bash .agents/skills/split-creator/scripts/intake.sh --batch \
-     name=<name> q1=<letter|ns|!text> q2=<text> ... q20=<text>
+     name=<name> q1=<letter|ns|!text> q2=<text> ... q22=<text>
    ```
 
    Omit questions the user skipped entirely — the script applies their
@@ -58,56 +58,96 @@ Hard-required before designing — ask if missing:
 Everything else may fall back to a recorded default. Every default used must
 be listed in the program's "Assumptions" section.
 
-## Step 3 — Design pipeline
+## Step 3 — Design pipeline (standardized)
 
-Consult the knowledge files **in this order**; each stage's output feeds the
-next:
+Ten stages (plus the level profile as stage 0), in order; each stage's
+output feeds the next. Stages marked
+*[rules]* are deterministic — apply the cited rules mechanically. Stages
+marked *[judgment]* use the decision trees.
 
-1. `knowledge/07-program-selection-decision-tree.md` — pick the split type and
-   difficulty from profile sections A + D (training age, current-program audit,
-   schedule). If the profile includes a current program, perform Step 0
-   (volume audit) honestly: a new split that reduces per-muscle volume is an
-   atrophy program.
-   **Days-per-week → container mapping** (derived from the `knowledge/03`
-   progression ladder; the 07 specialization branch may reshape the
-   container — e.g. 3 uppers + 1 lower for an upper priority):
+0. **Level profile** *[rules]* — classify the lifter (beginner /
+   intermediate / advanced) from training age and apply
+   [references/level-matrix.md](references/level-matrix.md) throughout all
+   later stages: container, block length, progression speed, starting
+   volume, exercise complexity, superset use, specialization permission.
+   Level differentiates the whole program structure, not one parameter.
+   Check the matrix's moderators (recovery budget, deficit, "progressing →
+   change nothing") — they can override the level default.
+1. **Recovery context** *[rules]* — read profile Q13 (sleep/stress) and
+   Q14 (calories). Deficit: distribute leg volume as single movements
+   across the week, keep 1 heavy top set on big lifts (`knowledge/training/06`
+   § Prep/Deficit). Poor recovery budget or 35–40+ gray zone: default to
+   the moderate branch of the `07` difficulty tree. Record any volume-band
+   scaling this forces.
+2. **Step 0 audit** *[judgment]* — `knowledge/training/07` § Step 0. If the profile
+   includes a current program, audit its per-muscle weekly volume honestly:
+   a new split that reduces volume is an atrophy program. No current
+   program → start mid-band (middle of 10–20 for priorities, below for the
+   rest) and let the logbook calibrate.
+3. **Container** *[judgment]* — `knowledge/training/07` decision tree + the
+   days-per-week → container mapping (from `knowledge/training/03`; the 07
+   specialization branch may reshape the container — e.g. 3 uppers +
+   1 lower for an upper priority). If the profile has a split-type
+   preference (Q21), treat it as the app-style selection: validate it
+   against the tree — honor it when the days/schedule/level allow
+   (consistency beats optimality [T19–T22]) and surface the conflict when
+   they don't, rather than silently overriding either way:
    - 2 days → full body
    - 3 days → full body (novice) or rotating Upper/Lower (intermediate+)
    - 4 days → Upper/Lower, synchronous (e.g. Mon/Tue/Thu/Fri)
    - 5–6 days → PPL family (synchronous/hybrid), or U/L + PPL hybrid
-2. `knowledge/03-program-styles.md` — settle the split template and weekly
-   layout (fixed weekdays vs rolling, rest-day placement).
-3. `knowledge/02-programming-variables.md` + relevant muscle files
-   (`knowledge/09-…13`) — per-muscle weekly volume, frequency, rep ranges,
-   rest periods. Show the volume allocation against the landmarks, then
-   mechanize the check: write the per-muscle hard-set counts per session to
-   `programs/audits/<name>-<YYYY-MM-DD>.json` and run
-   `python3 .agents/skills/split-creator/scripts/volume-audit.py <file>`;
-   paste its generated table **verbatim** into the program's volume-audit
-   section (do not hand-edit verdicts), and link the saved audit file.
-   Resolve every warning the script prints below the table — deliberate
-   maintenance/specialization choices stay, they just get flagged and
-   justified in a bullet under the table, never by editing the table.
-   Landmark data lives in `references/volume-landmarks.json`; update it only
-   from cited knowledge-file content.
-   **Rest standard:** every exercise in every generated program prescribes
-   **2 minutes rest** (superset partners share one 2-min rest). Do not use
-   per-exercise rest ranges. Also mechanize the time budget: add a
-   `"target_min"` (intake Q6) and per-session set/superset counts to the
-   same audit run via
-   `python3 .agents/skills/split-creator/scripts/session-length.py <file>`
-   (same directory, `<name>-<YYYY-MM-DD>-length.json`), paste its table
-   verbatim, and resolve any over-budget warning by cutting sets, adding
-   supersets, or moving work to another session.
-4. `knowledge/05-exercise-selection.md` + muscle files — exercise selection
-   honoring injuries (first filter), equipment, preferences, and
-   stretch/lengthened-position bias. Max ~5 sets per exercise per session;
-   spread volume across angles.
-5. `knowledge/06-recovery-and-fatigue.md` — rest-day placement, session
-   ordering, deload type and timing matched to the program's stressor.
-6. `knowledge/04-progression-and-periodization.md` — block structure
-   (overload weeks + deload) and the week-to-week progression method matched
-   to training age.
+4. **Volume allocation** *[rules]* — per-muscle weekly sets against the
+   landmarks (`knowledge/training/02` + muscle files `09–13`), **counting indirect
+   volume**: pressing counts toward triceps (medial/lateral) and front
+   delts; respect muscle caps (back >25 sets/wk = recovery risk;
+   ~6 sets/muscle/session plateau). Scale the starting band per stage 1.
+   Specialization reallocates sets — never conjures them.
+5. **Frequency check** *[rules]* — every muscle's weekly sets land in ≥2
+   sessions (3× for small/lagging muscles); ≤~6 hard sets/muscle/session;
+   ≤~5 sets per exercise per session, then add an exercise at a new angle.
+6. **Slot filling** *[judgment on selection, rules on parameters]* —
+   `knowledge/training/05` + muscle files. Each session is built from slots:
+   compounds first (priority muscle first when specializing), isolations
+   later, stretch/lengthened-position bias, injuries as first filter,
+   curated per-slot alternatives. Rep range by slot type (`knowledge/training/02`):
+   compounds 6–10, isolations 10–15, adjusted for joint tolerance.
+7. **Effort layer** *[rules]* — RIR targets by exercise type (`knowledge/training/07`
+   § Effort Prescription): heavy free-weight compounds 1–3 RIR even on the
+   last set; machines/cables last set to failure, earlier sets 1–2 RIR;
+   isolations may go to failure. Novices get loose RIR; intermediates+
+   explicit targets. Week 1 calibrates at RIR 3–4 to leave progression room.
+8. **Weekly ordering** *[rules]* — `knowledge/training/06` § Rest Days & Scheduling:
+   hardest sessions after rest days; deadlifts before the most rest days;
+   lower-body days drain CNS ~24 h; never >3 consecutive training days;
+   fixed vs rolling layout from `knowledge/training/03`.
+9. **Engine** *[rules]* — `knowledge/training/04`: block structure (3–6 overload
+   weeks + 1 deload; typical 4+1; novices skip deloads), progression
+   method matched to training age (A reps / B sets / C RPE ramp), deload
+   lever matched to the stressor (`knowledge/training/06`), logbook feedback loop.
+   If the profile specifies a program length (Q22), validate it against
+   the level matrix ("Interaction with split-duration selection"): e.g.
+   12 wk at intermediate = 2 blocks of 4+1 + a week-1 calibration note;
+   a length the matrix rejects (beginner + 4 wk with a deload) gets
+   surfaced and corrected, not silently changed.
+10. **Gates** *[rules]* — mechanized checks; resolve every warning before
+    shipping:
+    - Write the per-muscle hard-set counts per session to
+      `programs/audits/<name>-<YYYY-MM-DD>.json` and run
+      `python3 .agents/skills/split-creator/scripts/volume-audit.py <file>`;
+      paste its table **verbatim** into the program's volume-audit section
+      (do not hand-edit verdicts) and link the saved audit file. Deliberate
+      maintenance/specialization choices stay — flag and justify them in a
+      bullet under the table, never by editing it. Landmark data lives in
+      `references/volume-landmarks.json`; update it only from cited
+      knowledge-file content.
+    - **Rest standard:** every exercise prescribes **2 minutes rest**
+      (superset partners share one 2-min rest); no per-exercise ranges.
+      Mechanize the time budget: add a `"target_min"` (intake Q6) and
+      per-session set/superset counts, run
+      `python3 .agents/skills/split-creator/scripts/session-length.py <file>`
+      (writes `<name>-<YYYY-MM-DD>-length.json`), paste its table verbatim,
+      and resolve over-budget warnings by cutting sets, adding supersets,
+      or moving work to another session.
 
 **Contradiction policy:** sources disagree by design (see
 `knowledge/08-source-map.md` § Known Contradictions). Pick the position that
@@ -127,6 +167,6 @@ Rest is always written as "2 min" (the standard) — supersets share it.
 ## Step 5 — Iteration
 
 On follow-up ("stalling", "not recovering", "sessions too long"), apply the
-logbook feedback loop (`knowledge/04`): adjust before rebuilding. Save a new
+logbook feedback loop (`knowledge/training/04`): adjust before rebuilding. Save a new
 dated program file rather than overwriting, and update the profile if the
 person's circumstances changed.

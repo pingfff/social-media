@@ -2,7 +2,7 @@
 """Weekly volume audit for split-creator programs (SKILL.md Step 3, stage 3).
 
 Checks per-muscle weekly hard-set totals against the volume landmarks
-distilled in knowledge/02-programming-variables.md + muscle files 09-13.
+distilled in knowledge/training/02-programming-variables.md + muscle files 09-13.
 Landmark data lives in references/volume-landmarks.json next to this
 script — edit it only from cited knowledge-file content.
 
@@ -148,7 +148,7 @@ def main():
             if entry.get("mode") != "mostly_indirect":
                 warnings.append(
                     "%s: %d sets/wk is at or below the retention landmark (~%d) — "
-                    "atrophy risk for a growth goal [T22 via knowledge/02]"
+                    "atrophy risk for a growth goal [T22 via knowledge/training/02]"
                     % (key, total, retention)
                 )
         elif total < lo:
@@ -205,7 +205,7 @@ def main():
     print(
         "\n*Counts are hard working sets only (warm-ups never count [T4]). "
         "Muscles marked (generic) have no muscle-specific landmark in the "
-        "knowledge files — the 10–20 default from knowledge/02 was applied. "
+        "knowledge files — the 10–20 default from knowledge/training/02 was applied. "
         "Reconcile against the program's session tables before shipping.*"
     )
 

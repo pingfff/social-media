@@ -8,7 +8,7 @@
 # user in-chat via AskUserQuestion and then writes the profile through
 # this same script so validation/marking is identical):
 #   bash .agents/skills/split-creator/scripts/intake.sh --batch name=ping q1=d q4="chest and back" ...
-# Keys: name, q1..q20. Missing keys fall back to the question default
+# Keys: name, q1..q22. Missing keys fall back to the question default
 # (each fallback is printed; defaults are disclosed in the program's
 # Assumptions section). Answer syntax per question is the same as the
 # terminal form: option letter (+ optional note), ns, !free text.
@@ -34,7 +34,7 @@ if [[ "${1:-}" == "--batch" ]]; then
     k="$(printf '%s' "${a%%=*}" | tr '[:upper:]' '[:lower:]' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
     v="${a#*=}"
     [[ "$a" == *=* ]] || { printf 'error: --batch items must be key=value, got "%s"\n' "$a" >&2; exit 2; }
-    [[ "$k" =~ ^(name|q([1-9]|1[0-9])|q20)$ ]] || { printf 'error: unknown batch key "%s"\n' "$k" >&2; exit 2; }
+    [[ "$k" =~ ^(name|q([1-9]|[12][0-9]))$ ]] || { printf 'error: unknown batch key "%s"\n' "$k" >&2; exit 2; }
     printf '%s=%s\n' "$k" "$v" >> "$BATCH_TMP"
   done
 fi
@@ -190,6 +190,9 @@ ask_opt  q18 "Q18  Frequency preference: a)often b)rare+focused" "a" \
 ask_opt  q19 "Q19  Deload preference: a)scheduled b)by feel c)spread-week" "a" \
   "a=scheduled" "b=by feel" "c=spread-week (frequency deload)"
 ask_free q20 "Q20  Anything else to respect" "-"
+ask_opt  q21 "Q21  Split-type preference (app selection): a)full body b)upper/lower c)PPL d)hybrid U/L+PPL (validated against the decision tree; ns = tree decides)" "a" \
+  "a=full body" "b=upper/lower" "c=PPL" "d=hybrid (U/L + PPL)"
+ask_num  q22 "Q22  Program length in weeks (4/5/8/12/16; validated against the level matrix)" "5" "4|5|8|12|16"
 
 mkdir -p programs/profiles
 out="programs/profiles/${name}.md"
@@ -233,6 +236,11 @@ Assumptions section.
 ## H. Preferences
 - Frequency: $q18 | Deload: $q19
 - Notes: $q20
+
+## I. App selection (order: level → duration → split type)
+- Level: derived from training age (level matrix)
+- Split-type preference: $q21
+- Program length: $q22 wk
 EOF
 } > "$out"
 
