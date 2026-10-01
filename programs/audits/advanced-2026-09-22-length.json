@@ -1,0 +1,30 @@
+{
+  "target_min": 75,
+  "sessions": {
+    "Push (Mon)": {
+      "sets": 16,
+      "superset_pairs": 0,
+      "exercises": 5
+    },
+    "Pull (Tue)": {
+      "sets": 17,
+      "superset_pairs": 1,
+      "exercises": 6
+    },
+    "Legs (Wed)": {
+      "sets": 19,
+      "superset_pairs": 0,
+      "exercises": 6
+    },
+    "Lower (Fri)": {
+      "sets": 15,
+      "superset_pairs": 0,
+      "exercises": 5
+    },
+    "Upper (Sat)": {
+      "sets": 20,
+      "superset_pairs": 1,
+      "exercises": 6
+    }
+  }
+}

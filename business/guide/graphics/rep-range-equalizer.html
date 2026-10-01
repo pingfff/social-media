@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1500px; height:940px; background:#141A13; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow:hidden; }
+.wrap { padding:64px 72px; height:100%; display:flex; flex-direction:column; }
+h1 { color:#F4F0E6; font-size:42px; font-weight:800; letter-spacing:0.02em; }
+p.sub { color:#9AA694; font-size:21px; margin-top:10px; }
+svg { flex:1; }
+.zone { fill:#9AA694; font-size:16px; letter-spacing:0.14em; font-weight:600; }
+.tick { fill:#9AA694; font-size:18px; }
+.note1 { fill:#F4F0E6; font-size:19px; font-weight:700; }
+.note2 { fill:#9AA694; font-size:17px; }
+.takeaway { margin:26px 0 6px; background:#1C241B; border:1px solid #7FA96E; border-radius:14px; padding:20px 28px; color:#F4F0E6; font-size:23px; font-weight:600; text-align:center; }
+</style></head><body><div class="wrap">
+<h1>The Rep-Range Bell Curve</h1>
+<p class="sub">Growth per set across rep ranges — every zone works, the middle just pays best per minute</p>
+<svg viewBox="0 0 1500 545" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+<!-- x: 150 + (reps-5)*50 ; 5→150, 30→1400 -->
+<!-- practical zone 6–15: x=200..650 -->
+<rect x="200" y="90" width="450" height="340" fill="#1E2A1C"/>
+<rect x="150" y="90" width="50" height="340" fill="#222D20"/>
+<rect x="650" y="90" width="750" height="340" fill="#222D20"/>
+<text x="425" y="496" text-anchor="middle" class="zone">PRACTICAL ZONE</text>
+<text x="1025" y="496" text-anchor="middle" class="zone">WORKS &mdash; JUST LESS PRACTICAL</text>
+<!-- flat "all builds muscle" floor line at y=360 from 5 to 30 -->
+<line x1="150" y1="360" x2="1400" y2="360" stroke="#9AA694" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="1400" y="330" text-anchor="end" class="note2">any rep count builds muscle down here &mdash;</text>
+<text x="1400" y="304" text-anchor="end" class="note2">if the set is within ~2 reps of failure</text>
+<!-- bell curve: gaussian peak at x=425 (10.5 reps), y from 360 up to 120 -->
+<polyline points="150,359 175,357 200,353 225,347 250,340 275,331 300,321 325,309 350,297 375,284 400,271 425,258 450,246 475,235 500,225 525,216 550,209 575,203 600,198 625,194 650,191 675,189 700,187 750,185 800,184 850,183 900,183 950,183 1000,183 1050,184 1100,185 1150,186 1200,188 1250,190 1300,192 1350,194 1400,196" fill="none" stroke="#7FA96E" stroke-width="6" stroke-linejoin="round"/>
+<!-- peak marker ~10-12 reps -->
+<line x1="475" y1="220" x2="475" y2="150" stroke="#7FA96E" stroke-width="2"/>
+<circle cx="475" cy="235" r="9" fill="#7FA96E" stroke="#141A13" stroke-width="3"/>
+<text x="475" y="128" text-anchor="middle" class="note1">10&ndash;12 reps</text>
+<text x="475" y="102" text-anchor="middle" class="note2">best growth per minute invested</text>
+<!-- left edge 5 reps annotation -->
+<line x1="150" y1="345" x2="168" y2="268" stroke="#7FA96E" stroke-width="2"/>
+<circle cx="150" cy="359" r="9" fill="#7FA96E" stroke="#141A13" stroke-width="3"/>
+<text x="176" y="252" text-anchor="start" class="note1">≈5 reps</text>
+<text x="176" y="226" text-anchor="start" class="note2">joint stress, slow volume</text>
+<!-- right side 25-30 annotation -->
+<line x1="1312" y1="192" x2="1272" y2="130" stroke="#7FA96E" stroke-width="2"/>
+<circle cx="1312" cy="193" r="9" fill="#7FA96E" stroke="#141A13" stroke-width="3"/>
+<text x="1266" y="112" text-anchor="end" class="note1">25&ndash;30 reps</text>
+<text x="1266" y="86" text-anchor="end" class="note2">drifts cardio-limited, fatiguing</text>
+<!-- axes -->
+<line x1="150" y1="430" x2="1400" y2="430" stroke="#9AA694" stroke-width="2"/>
+<line x1="150" y1="430" x2="150" y2="90" stroke="#9AA694" stroke-width="2"/>
+<line x1="150" y1="430" x2="150" y2="440" stroke="#9AA694" stroke-width="2"/><text x="150" y="468" text-anchor="middle" class="tick">5</text>
+<line x1="400" y1="430" x2="400" y2="440" stroke="#9AA694" stroke-width="2"/><text x="400" y="468" text-anchor="middle" class="tick">10</text>
+<line x1="650" y1="430" x2="650" y2="440" stroke="#9AA694" stroke-width="2"/><text x="650" y="468" text-anchor="middle" class="tick">15</text>
+<line x1="900" y1="430" x2="900" y2="440" stroke="#9AA694" stroke-width="2"/><text x="900" y="468" text-anchor="middle" class="tick">20</text>
+<line x1="1150" y1="430" x2="1150" y2="440" stroke="#9AA694" stroke-width="2"/><text x="1150" y="468" text-anchor="middle" class="tick">25</text>
+<line x1="1400" y1="430" x2="1400" y2="440" stroke="#9AA694" stroke-width="2"/><text x="1400" y="468" text-anchor="middle" class="tick">30</text>
+<text x="1400" y="536" text-anchor="end" class="note2">reps per set</text>
+</svg>
+<div class="takeaway">6&ndash;15 is a logistics choice, not biology &mdash; heavy doesn't "build mass" while light "tones."</div>
+</div></body></html>

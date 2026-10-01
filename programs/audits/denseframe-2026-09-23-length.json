@@ -1,0 +1,20 @@
+{
+  "target_min": 75,
+  "sessions": {
+    "Upper (Mon)": {
+      "sets": 22,
+      "superset_pairs": 2,
+      "exercises": 6
+    },
+    "Lower (Wed)": {
+      "sets": 19,
+      "superset_pairs": 1,
+      "exercises": 5
+    },
+    "Full (Fri)": {
+      "sets": 23,
+      "superset_pairs": 2,
+      "exercises": 6
+    }
+  }
+}

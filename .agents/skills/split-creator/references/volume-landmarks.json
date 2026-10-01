@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "unit": "weekly hard working sets per muscle (warm-up sets never count [T4])",
+    "maintained_by": "keep in sync with knowledge/02-programming-variables.md and muscle files knowledge/09-13; never add uncited numbers",
+    "generic_landmarks": {
+      "retention": 3,
+      "minimal_growth": [6, 8],
+      "default_growth": [10, 20],
+      "small_muscle_high_volume_claim": [20, 30],
+      "note": "retention ~3 and 6-8 minimal growth [T22]; 10-20 default growth [T1, T6]; 20-30 small-muscle claim [T6]; >10-12 diminishing ROI [T22] — knowledge/08 contradiction #4"
+    },
+    "session_caps": {
+      "per_muscle_per_session_warn_over": 8,
+      "note": "stimulus plateaus ~6 hard sets/muscle/session [T4, T22]; ~7 defensible when the muscle spans regions (back/6 pro pull day); contradiction #6 lists T22 ~6 vs T23 15-16",
+      "per_exercise_per_session": 5,
+      "per_exercise_note": "max ~5 sets per exercise per session; more volume -> add a different-angle exercise [T6]"
+    }
+  },
+  "muscles": {
+    "chest": {
+      "min": 10, "max": 20, "retention": 3,
+      "source": "T1, T6 via knowledge/02; chest/1 via knowledge/10",
+      "notes": "2 sessions/wk endorsed; a single 25-set chest day rejected [chest/1]"
+    },
+    "back": {
+      "min": 10, "max": 20, "retention": 3, "caution_over": 25,
+      "source": "T1, T6 via 02; back/1 via 09",
+      "notes": "count lats + upper back + floor pulls together; >25 working sets/wk = recovery risk for most [back/1]"
+    },
+    "quads": {
+      "min": 10, "max": 20, "retention": 3,
+      "source": "T1, T6 via 02; legs/1-2 via 11",
+      "notes": "generic large-muscle band; rectus femoris grows only from leg extensions regardless of total [legs/1, legs/2]"
+    },
+    "hamstrings": {
+      "min": 10, "max": 20, "retention": 3,
+      "source": "T1, T6 via 02; legs/1 via 11",
+      "notes": "train BOTH functions: knee flexion (curls; seated > lying) + hip extension (hinges) [legs/1]"
+    },
+    "glutes": {
+      "min": 10, "max": 20, "retention": 3, "mode": "mostly_indirect",
+      "source": "T1, T6 via 02; legs/1, legs/3 via 11",
+      "notes": "heavy indirect coverage from squats/hinges/unilateral work; direct thrusts/abduction optional"
+    },
+    "calves": {
+      "min": 10, "max": 20, "retention": 3, "generic": true,
+      "source": "no explicit range in knowledge/11",
+      "notes": "contradiction #10: dedicated sets + 30-s stretch holds [legs/1] vs life-load theory, gym work mostly tendon health [legs/3]"
+    },
+    "side_delts": {
+      "min": 12, "max": 16, "retention": 3,
+      "source": "shoulders/5 via 12; T22 via 02",
+      "notes": "12-16 applies when delts are the PRIORITY (spread over 3 days); 6-8 = growth surplus for non-priority [T22]; overhead pressing does not build them [shoulders/5]"
+    },
+    "rear_delts": {
+      "min": 10, "max": 20, "retention": 3, "generic": true,
+      "source": "no explicit range; dispute logged in knowledge/12",
+      "notes": "contradiction #9: overrated if back training is proper [shoulders/2] vs prioritize-first [shoulders/3,4,6]; strong back volume overlaps heavily"
+    },
+    "front_delts": {
+      "min": 10, "max": 20, "retention": 3, "generic": true, "mode": "mostly_indirect",
+      "source": "shoulders/1, shoulders/2 via 12",
+      "notes": "mostly covered by chest pressing; direct work only if lagging"
+    },
+    "biceps": {
+      "min": 3, "max": 6, "retention": 3,
+      "source": "arms/1 via 13",
+      "notes": "DIRECT sets only; back work counts as indirect; tolerable up to ~10; specialization 9-14 [arms/3]"
+    },
+    "triceps": {
+      "min": 3, "max": 6, "retention": 3,
+      "source": "arms/1, arms/2 via 13",
+      "notes": "DIRECT sets only; pressing covers medial/lateral heads; overhead/stretch isolation covers the long head"
+    },
+    "traps": {
+      "min": 6, "max": 12, "retention": 3,
+      "source": "back/4 via 09",
+      "notes": "direct mid/lower-trap work (Kelso shrugs): start 6/wk, progress toward 12 if recovery allows; upper traps get shrugs + carrying"
+    },
+    "abs": {
+      "min": 10, "max": 20, "retention": 3, "generic": true,
+      "source": "no explicit range in the knowledge files",
+      "notes": "no per-muscle norm logged; direct work optional (e.g., roman-chair raises [legs/2])"
+    }
+  }
+}

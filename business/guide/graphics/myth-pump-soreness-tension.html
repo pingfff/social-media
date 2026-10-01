@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1500px; height:940px; background:#141A13; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow:hidden; }
+.wrap { padding:64px 72px; height:100%; display:flex; flex-direction:column; }
+h1 { color:#F4F0E6; font-size:42px; font-weight:800; letter-spacing:0.02em; }
+p.sub { color:#9AA694; font-size:21px; margin-top:10px; }
+.panels { flex:1; display:flex; gap:28px; margin-top:44px; }
+.panel { flex:1; background:#1C241B; border:1px solid #3A4636; border-radius:18px; padding:40px 34px; display:flex; flex-direction:column; align-items:center; text-align:center; }
+.panel.yes { border:2px solid #7FA96E; background:#1E2A1B; }
+.mark { width:110px; height:110px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:64px; font-weight:800; }
+.no  .mark { color:#D8D4C8; border:3px solid #3A4636; background:#141A13; }
+.yes .mark { color:#141A13; background:#7FA96E; border:3px solid #7FA96E; }
+.panel h2 { margin-top:28px; font-size:36px; font-weight:800; letter-spacing:0.04em; }
+.no  h2 { color:#D8D4C8; }
+.yes h2 { color:#7FA96E; }
+.panel p { margin-top:16px; font-size:22px; line-height:1.45; color:#9AA694; }
+.yes p { color:#F4F0E6; font-weight:600; }
+.tag { margin-top:auto; padding-top:26px; font-size:15px; letter-spacing:0.18em; font-weight:600; color:#9AA694; }
+.takeaway { margin-top:36px; background:#1C241B; border:1px solid #7FA96E; border-radius:14px; padding:20px 28px; color:#F4F0E6; font-size:23px; font-weight:600; text-align:center; }
+</style></head><body><div class="wrap">
+<h1>What Actually Builds Muscle?</h1>
+<p class="sub">The old "three drivers" model, cut down to the one that survives the research</p>
+<div class="panels">
+  <div class="panel no">
+    <div class="mark">&#10005;</div>
+    <h2>PUMP</h2>
+    <p>Shorter rests mean more burn — and <em>less</em> growth. The pump is a side effect, not a signal.</p>
+    <div class="tag">METABOLIC STRESS</div>
+  </div>
+  <div class="panel no">
+    <div class="mark">&#10005;</div>
+    <h2>SORENESS</h2>
+    <p>Damage doesn't predict growth — and inflamed muscle produces <em>less</em> force.</p>
+    <div class="tag">MUSCLE DAMAGE</div>
+  </div>
+  <div class="panel yes">
+    <div class="mark">&#10003;</div>
+    <h2>TENSION</h2>
+    <p>Fibers contracting against real resistance, close to failure. The primary — arguably only — driver.</p>
+    <div class="tag">MECHANICAL TENSION</div>
+  </div>
+</div>
+<div class="takeaway">Damage and stress are passengers. Tension is driving.</div>
+</div></body></html>

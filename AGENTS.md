@@ -1,96 +1,97 @@
-# Social Media Content Repo
+# AGENTS.md
 
-Content operations for a fitness creator (natural bodybuilding, Classic
-Physique). This repo produces scripts, research, and ideas for Instagram
-Reels and YouTube — it is not a software project. Python scripts here are
-internal tooling, not a product.
+Guidance for AI coding agents working in this repository.
 
-## Repo structure
+## What this repo is
 
-- `brand/` — published content, organized by format
-  (`Educational Workouts/`, `Peak Week 101/`, `Skits/`, `Talking Head/`).
-  One folder per video: `transcript.txt`, `caption.txt`.
-- `brand/voice.md` — CANONICAL voice profile. Read it before writing any
-  script, caption, or skit. Persona facts, pacing budget (~150 words/min),
-  hook patterns, skit formats, running gags, and CTA rules live there.
-- `knowledge/` — research library feeding scripts, split into `raw/`
-  (write-once archive: full transcripts + metrics, pasted
-  articles/threads) and `clean/` (the ONLY reading surface: distilled
-  files with YAML frontmatter + fixed sections; `clean/topics/` holds
-  per-topic synthesis — read it first for a topic). NEVER read files
-  under `knowledge/raw/` — also blocked by `opencode.json` read
-  permission. Distill raw -> clean once, at fetch time, from
-  in-session content. See `knowledge/README.md` for the pipeline,
-  clean-file schema, and source-header format.
-- `series/` — planned series (cutting-101, form-fix, hypertrophy-101,
-  program-design-101, skits). Episode scripts go here once written.
-- `scripts/` — internal tooling (Python). `youtube_search.py` is stdlib
-  only; `youtube_transcript.py` needs `youtube-transcript-api`
-  (`pip install -r requirements.txt`).
+A text-only knowledge base about hypertrophy training and program design,
+built from ~40 video transcripts (fitness YouTube channels: Jeff Nippard,
+Andy Baker, Westside/conjugate, J3 University, Meadows, etc.). It serves as
+the source of truth for producing social-media content and answering
+program-design questions. There is no code, no build system, no tests.
 
-## Writing rules
+## Layout
 
-- Scripts must follow `brand/voice.md`: mechanism -> application structure,
-  kilograms only, 60-75s educational = ~150-190 words, skits under ~60
-  words, educational content stays clean (no profanity).
-- Captions: all lowercase, one CAPS emphasis word, soft DM CTA.
+- `raw/` — raw transcripts, verbatim. Do not edit these.
+  - `transcript1.txt` … `transcript23.txt` — batch 1: general program design.
+  - `arms/`, `back/`, `chest/`, `legs/`, `shoulders/` — batch 2: muscle-specific
+    transcripts, numbered per folder.
+  - `Peak Week/` — batch 3: peak-week / contest-prep-peak transcripts
+    (`transcriptN.txt`, cited as `[PW#]`) plus `websiteN.txt` link files
+    (cited as `[W#]`). Distilled into `knowledge/bodybuilding/01-06`.
+- `knowledge/` — distilled, numbered topic files.
+  - `training/` — `01-…` through `13-…`: programming and muscle-specific
+    topics (principles, variables, program styles, progression, exercise
+    selection, recovery, decision tree, then back/chest/legs/shoulders/arms).
+  - `bodybuilding/` — bodybuilding-prep topics, own `01-…` numbering, all
+    following the five-section schema (Principles / Protocols & Numbers /
+    Quotes / Contradictions & Context / Gaps — see its README). Quantitative
+    claims live in the Protocols & Numbers tables; downstream content
+    (scripts, graphics) must take numbers from those tables, not prose.
+  - `08-source-map.md` is the traceability index: transcript → topic mapping
+    plus a list of known contradictions between sources. Keep it current.
+- `content/` — social-media content built from the knowledge base.
+  - `instagram-peak-week-series.md` — the 17-episode series plan.
+  - `peak-week-scripts/` — one script per episode (hook, timestamped beats,
+    captions with coaching CTA).
+  - `peak-week-graphics/` — the graphics system: `html/` holds the design
+    system + per-episode specs + `render.py` (the source of truth — re-render
+    with `cd html && python3 render.py spec_epN`); `episode N/` folders hold
+    rendered 1080x1920 PNGs, which are **git-ignored build artifacts**.
+- `programs/` — generated workout programs (`programs/audits/`,
+`programs/profiles/`) from the split-creator skill.
+- `business/` — coaching business deliverables (PDF guides, flagship program
+  manuscripts + build scripts).
+- `pingliftsfitness-site/` — website assets.
+- `.agents/skills/` — repo skills:
+  - `split-creator/` — workout-split design (intake → decision tree →
+    program into `programs/`).
+  - `reel-graphics/` — vertical Instagram graphics via the HTML/Chromium
+    pipeline in `content/peak-week-graphics/html/`.
+  - `media-intake/` — find/download/transcribe new source videos into
+    `raw/` (popularity-ranked deep search, caption fetch,
+    local-whisper fallback, human curation gate).
+- `.config/` — git-ignored local config (YouTube API key, static ffmpeg).
 
-## Creating a series (e.g. "how to diet")
+## Citation conventions (critical)
 
-1. Read `brand/voice.md` — always first.
-2. Read `knowledge/clean/topics/<topic>.md` (see `knowledge/README.md`
-   reading path). If the topic file is missing or thin, run the
-   `@youtube-research` agent to fill the library BEFORE planning.
-3. Write `series/<name>/plan.md` — the episode map for user approval:
-   series title + positioning, episode list (per episode: working
-   title, one-line hook in the creator's voice, mechanism ->
-   application beats, knowledge sources cited via clean-file paths).
-4. WAIT for user approval of the plan.
-5. On approval, write episode scripts into `series/<name>/` one at a
-   time (or in requested batches), following voice rules and citing
-   knowledge sources. One folder or file per episode, plus caption.
+- `[T4]` means `raw/transcript4.txt`.
+- `[back/7]`, `[arms/2]` etc. mean `raw/<bodypart>/<n>.txt`.
+- **Every claim in `knowledge/` must carry a transcript citation.** Never add
+  uncited claims, and never fabricate transcript content — if a fact isn't in
+  a transcript, it doesn't belong in the knowledge base.
+- When verifying a claim, grep the cited transcript; transcripts are raw
+  auto-generated text (no punctuation/capitalization), so search loosely
+  (e.g. short lowercase phrases).
 
-## Tools
+## Handling contradictions
 
-- `@youtube-research` subagent (`.opencode/agents/youtube-research.md`) —
-  the structured way to research YouTube: give it a topic, it runs
-  batched queries (quota-capped, max 6 script runs per task), archives
-  raw transcripts + metrics, distills clean transcript files (claims +
-  craft), and maintains the `clean/topics/<topic>.md` synthesis. The
-  library is the deliverable — it returns only a short confirmation.
-  Prefer it over running the scripts ad hoc in the main session.
-- `scripts/youtube_search.py` — YouTube Data API v3 search for video ideas:
+Sources genuinely disagree (failure training, bro splits, volume norms,
+eccentrics, deloads…). The current contradictions are catalogued in
+`08-source-map.md` § "Known Contradictions". Rules:
 
-  ```
-  python scripts\youtube_search.py "query" --max 10
-  python scripts\youtube_search.py "query" --order viewCount --json
-  ```
+- Do **not** silently resolve a contradiction or average the numbers.
+- Present both positions with their citations and the context that explains
+  the disagreement (e.g. natural vs assisted, novice vs advanced).
+- If you find a *new* contradiction, add it to the catalogue.
 
-  Returns titles, channels, views, likes, engagement %, URLs. Costs ~2
-  quota units per run against a 10,000/day limit — batch queries
-  deliberately, don't loop.
-- `scripts/youtube_transcript.py` — fetch a video's transcript (manual
-  or auto-generated captions), no quota cost:
+## Adding new material
 
-  ```
-  python scripts\youtube_transcript.py <url-or-id>            # print
-  python scripts\youtube_transcript.py <url-or-id> --save --why "feeds cutting-101"
-  ```
+Also follow the skill's output spec
+(`.agents/skills/split-creator/references/output-spec.md`) for any generated
+program: sections, session tables, volume audit, no prescribed weights.
 
-  `--save` archives to `knowledge/raw/transcripts/` with the standard
-  header (costs 1 quota unit for metadata). Transcript fetching itself
-  needs no API key. Distill a clean companion in
-  `knowledge/clean/transcripts/` per the schema in
-  `knowledge/README.md`.
+1. Drop the new transcript into the right place in `raw/`
+   (a bodypart subfolder if muscle-specific, else the next `transcriptN.txt`).
+2. Add a row to the appropriate table in `knowledge/08-source-map.md`
+   (topic + which knowledge files it feeds).
+3. Distill it into the existing numbered knowledge file(s), or create the
+   next number in sequence — never renumber existing files.
+4. Head each knowledge file's `*Source: …*` line must stay accurate.
 
-## Secrets
+## Gotchas
 
-- `.env` holds `YOUTUBE_API_KEY` and is gitignored. NEVER commit it, never
-  paste the key into scripts, docs, or commits. If the key appears in git
-  history, it must be rotated (Google Cloud Console).
-
-## Git
-
-- Remote: `origin` -> https://github.com/pingfff/social-media.git
-  (public). Default branch: `master`. Commit only when the user asks.
-- Treat every file as publishable to a public repo.
+- Filenames in `raw/` sort lexically (`transcript10` before
+  `transcript2`); use version-sort (`ls -v`) when order matters.
+- This is general fitness information for content creation, not medical
+  advice; keep any generated content framed accordingly.

@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1500px; height:940px; background:#141A13; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow:hidden; }
+.wrap { padding:50px 60px; height:100%; display:flex; flex-direction:column; }
+h1 { color:#F4F0E6; font-size:38px; font-weight:800; }
+p.sub { color:#9AA694; font-size:19px; margin-top:6px; margin-bottom:20px; }
+.rows { flex:1; display:flex; flex-direction:column; gap:12px; }
+.r { display:flex; align-items:stretch; gap:0; flex:1; }
+.q { flex:1.15; background:#1C241B; border:1px solid #3A4636; border-radius:12px; display:flex; align-items:center; padding:12px 20px; color:#F4F0E6; font-size:19px; font-weight:700; }
+.arr { width:64px; display:flex; align-items:center; justify-content:center; color:#7FA96E; font-size:26px; font-weight:800; }
+.a { flex:1; background:#1E2A1B; border:1px solid #7FA96E; border-radius:12px; display:flex; flex-direction:column; justify-content:center; padding:12px 20px; }
+.a .split { color:#7FA96E; font-size:20px; font-weight:800; }
+.a .why { color:#9AA694; font-size:16px; line-height:1.35; margin-top:3px; }
+.foot { margin-top:16px; background:#1C241B; border:1px solid #7FA96E; border-radius:12px; padding:14px 24px; color:#F4F0E6; font-size:19px; font-weight:600; text-align:center; }
+</style></head><body><div class="wrap">
+<h1>Which Split? The Decision Tree</h1>
+<p class="sub">Work top to bottom — the first YES wins</p>
+<div class="rows">
+  <div class="r"><div class="q">Training age under ~1 year?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Full Body, 3&times;/week</div><div class="why">a little stimulus does a lot; no deloads needed yet</div></div></div>
+  <div class="r"><div class="q">Sessions past ~1.5h, or back-half lifts stalling from fatigue?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Move up: Full Body &#8594; Upper/Lower &#8594; PPL</div><div class="why">distribute the volume before it decays</div></div></div>
+  <div class="r"><div class="q">Fresh at the end of every session?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Move down the ladder</div><div class="why">concentrate stimulus quality — regression can be progress</div></div></div>
+  <div class="r"><div class="q">Only ~45 minutes per session?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Body-part split days</div><div class="why">max 2 muscle groups per day</div></div></div>
+  <div class="r"><div class="q">Schedule can't commit to fixed weekdays?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Rotating PPL (3 on, 1 off)</div><div class="why">or hybrid PPL with fixed rest days</div></div></div>
+  <div class="r"><div class="q">One muscle badly lagging?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Specialization phase</div><div class="why">cut a strong area to ~3 maintenance sets, reallocate to the priority at 2&ndash;3&times;/week</div></div></div>
+  <div class="r"><div class="q">Healthy intermediate, no complaints?</div><div class="arr">&#8594;</div><div class="a"><div class="split">Upper/Lower, 4 days</div><div class="why">the intermediate default</div></div></div>
+</div>
+<div class="foot">The engine (effort, volume, progression) matters; the split is just the container. Volume needs dictate the split — never pick the split first.</div>
+</div></body></html>

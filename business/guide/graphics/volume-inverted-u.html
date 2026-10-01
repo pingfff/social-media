@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1500px; height:940px; background:#141A13; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow:hidden; }
+.wrap { padding:56px 64px; height:100%; display:flex; flex-direction:column; }
+h1 { color:#F4F0E6; font-size:40px; font-weight:800; }
+p.sub { color:#9AA694; font-size:20px; margin-top:8px; }
+svg { flex:1; margin-top:10px; }
+.zone { fill:#9AA694; font-size:16px; letter-spacing:0.14em; font-weight:600; }
+.tick { fill:#9AA694; font-size:18px; }
+.m1 { fill:#F4F0E6; font-size:19px; font-weight:700; }
+.m2 { fill:#9AA694; font-size:17px; }
+.axis-note { fill:#9AA694; font-size:18px; }
+.takeaway { margin:26px 0 6px; background:#1C241B; border:1px solid #7FA96E; border-radius:14px; padding:20px 28px; color:#F4F0E6; font-size:23px; font-weight:600; text-align:center; }
+</style></head><body><div class="wrap">
+<h1>The Volume Dose-Response</h1>
+<p class="sub">Hard sets per muscle, per week — an inverted U: first sets do the most, fatigue eventually wins</p>
+<svg viewBox="0 0 1372 520" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+<!-- x: 120 + sets*42.7 ; 0->120, 30->1400 -->
+<rect x="120" y="100" width="256" height="330" fill="#222D20"/>
+<rect x="376" y="100" width="299" height="330" fill="#1E2E1C"/>
+<rect x="675" y="100" width="427" height="330" fill="#222D20"/>
+<rect x="1102" y="100" width="298" height="330" fill="#1C241B"/>
+<text x="248" y="486" text-anchor="middle" class="zone">MAINTENANCE</text>
+<text x="525" y="486" text-anchor="middle" class="zone">STEADY GROWTH</text>
+<text x="888" y="486" text-anchor="middle" class="zone">STANDARD: 10&ndash;20</text>
+<text x="1251" y="486" text-anchor="middle" class="zone">TRIAL, DON&rsquo;T ASSUME</text>
+<!-- inverted U: peak ~ x=810 (16 sets) y=120, ends y=400 -->
+<polyline points="120,400 160,383 200,364 240,344 280,323 320,301 360,280 400,260 440,242 480,226 520,211 560,198 600,186 640,176 680,167 720,159 760,152 800,147 840,143 880,140 920,139 960,139 1000,140 1040,142 1080,146 1120,151 1160,158 1200,166 1240,176 1280,187 1320,200 1360,214 1400,230" fill="none" stroke="#7FA96E" stroke-width="6" stroke-linejoin="round"/>
+<!-- markers -->
+<line x1="248" y1="352" x2="248" y2="300" stroke="#7FA96E" stroke-width="2"/>
+<circle cx="248" cy="364" r="9" fill="#7FA96E" stroke="#141A13" stroke-width="3"/>
+<text x="248" y="262" text-anchor="middle" class="m1">~3 sets</text>
+<text x="248" y="286" text-anchor="middle" class="m2">retention</text>
+<line x1="525" y1="200" x2="525" y2="148" stroke="#7FA96E" stroke-width="2"/>
+<circle cx="525" cy="212" r="9" fill="#7FA96E" stroke="#141A13" stroke-width="3"/>
+<text x="525" y="110" text-anchor="middle" class="m1">6&ndash;8 sets</text>
+<text x="525" y="134" text-anchor="middle" class="m2">steady growth, minimal volume</text>
+<line x1="888" y1="111" x2="888" y2="66" stroke="#7FA96E" stroke-width="2"/>
+<circle cx="888" cy="140" r="9" fill="#7FA96E" stroke="#141A13" stroke-width="3"/>
+<text x="888" y="42" text-anchor="middle" class="m1">10&ndash;20 sets — the prescription</text>
+<text x="888" y="90" text-anchor="middle" class="m2" dy="0"></text>
+<text x="1251" y="250" text-anchor="middle" class="m1">20&ndash;30 sets</text>
+<text x="1251" y="276" text-anchor="middle" class="m2">high-responder / assisted territory</text>
+<line x1="120" y1="430" x2="1400" y2="430" stroke="#9AA694" stroke-width="2"/>
+<line x1="120" y1="430" x2="120" y2="440" stroke="#9AA694" stroke-width="2"/><text x="120" y="466" text-anchor="middle" class="tick">0</text>
+<line x1="333" y1="430" x2="333" y2="440" stroke="#9AA694" stroke-width="2"/><text x="333" y="466" text-anchor="middle" class="tick">5</text>
+<line x1="546" y1="430" x2="546" y2="440" stroke="#9AA694" stroke-width="2"/><text x="546" y="466" text-anchor="middle" class="tick">10</text>
+<line x1="759" y1="430" x2="759" y2="440" stroke="#9AA694" stroke-width="2"/><text x="759" y="466" text-anchor="middle" class="tick">15</text>
+<line x1="972" y1="430" x2="972" y2="440" stroke="#9AA694" stroke-width="2"/><text x="972" y="466" text-anchor="middle" class="tick">20</text>
+<line x1="1186" y1="430" x2="1186" y2="440" stroke="#9AA694" stroke-width="2"/><text x="1186" y="466" text-anchor="middle" class="tick">25</text>
+<line x1="1400" y1="430" x2="1400" y2="440" stroke="#9AA694" stroke-width="2"/><text x="1400" y="466" text-anchor="middle" class="tick">30</text>
+<text x="1400" y="514" text-anchor="end" class="axis-note">hard sets per muscle per week</text>
+</svg>
+<div class="takeaway">Per session, stimulus plateaus around ~6 hard sets per muscle — 8+8 across two days beats 16 crammed into one.</div>
+</div></body></html>
