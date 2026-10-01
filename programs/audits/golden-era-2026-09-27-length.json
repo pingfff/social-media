@@ -1,0 +1,11 @@
+{
+  "target_min": 60,
+  "sessions": {
+    "Chest+Back A (Mon)": {"sets": 12, "superset_pairs": 0, "exercises": 4},
+    "Shoulders+Arms A (Tue)": {"sets": 18, "superset_pairs": 2, "exercises": 8},
+    "Legs A (Wed)": {"sets": 15, "superset_pairs": 0, "exercises": 5},
+    "Chest+Back B (Thu)": {"sets": 12, "superset_pairs": 0, "exercises": 4},
+    "Shoulders+Arms B (Fri)": {"sets": 18, "superset_pairs": 2, "exercises": 8},
+    "Legs B (Sat)": {"sets": 15, "superset_pairs": 0, "exercises": 5}
+  }
+}

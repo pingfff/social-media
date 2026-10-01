@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1500px; height:940px; background:#141A13; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow:hidden; }
+.wrap { padding:56px 64px; height:100%; display:flex; flex-direction:column; }
+h1 { color:#F4F0E6; font-size:40px; font-weight:800; }
+p.sub { color:#9AA694; font-size:20px; margin-top:8px; margin-bottom:20px; }
+.row { display:flex; gap:32px; flex:1; }
+.panel { flex:1; background:#1C241B; border:1px solid #3A4636; border-radius:18px; padding:30px 34px; display:flex; flex-direction:column; }
+.panel.good { border:2px solid #7FA96E; background:#1E2A1B; }
+.panel h2 { color:#F4F0E6; font-size:27px; font-weight:800; text-align:center; }
+.bars { flex:1; display:flex; flex-direction:column; justify-content:center; gap:30px; }
+.brow { display:flex; align-items:center; gap:16px; }
+.blab { width:130px; color:#9AA694; font-size:17px; font-weight:700; text-align:right; }
+.track { flex:1; background:#141A13; border:1px solid #3A4636; border-radius:10px; height:52px; position:relative; }
+.fill { position:absolute; left:0; top:0; bottom:0; border-radius:9px; display:flex; align-items:center; padding-left:16px; color:#141A13; font-size:19px; font-weight:800; }
+.fstim { background:#7FA96E; }
+.ffat { background:#9AA694; color:#141A13; }
+.panel .ratiotag { text-align:center; margin-top:8px; font-size:15px; letter-spacing:0.14em; font-weight:700; }
+.panel.good .ratiotag { color:#7FA96E; }
+.panel.bad .ratiotag { color:#9AA694; }
+.takeaway { margin-top:26px; background:#1C241B; border:1px solid #7FA96E; border-radius:14px; padding:20px 28px; color:#F4F0E6; font-size:23px; font-weight:600; text-align:center; }
+</style></head><body><div class="wrap">
+<h1>Stimulus-to-Fatigue Ratio</h1>
+<p class="sub">The most stimulus for the least systemic cost — a deadlift and a chest-supported row are not equal citizens</p>
+<div class="row">
+  <div class="panel bad">
+    <h2>Heavy Deadlift</h2>
+    <div class="bars">
+      <div class="brow"><div class="blab">Stimulus</div><div class="track"><div class="fill fstim" style="width:92%;">massive</div></div></div>
+      <div class="brow"><div class="blab">Fatigue</div><div class="track"><div class="fill ffat" style="width:92%;">massive</div></div></div>
+    </div>
+    <div class="ratiotag">HIGH / HIGH &mdash; THE BILL MATCHES THE MEAL</div>
+  </div>
+  <div class="panel good">
+    <h2>Machine Press / Supported Row</h2>
+    <div class="bars">
+      <div class="brow"><div class="blab">Stimulus</div><div class="track"><div class="fill fstim" style="width:86%;">comparable</div></div></div>
+      <div class="brow"><div class="blab">Fatigue</div><div class="track"><div class="fill ffat" style="width:30%;">fraction</div></div></div>
+    </div>
+    <div class="ratiotag">HIGH / LOW &mdash; THE RATIO YOU WANT</div>
+  </div>
+</div>
+<div class="takeaway">Pick the ratio, not the religion — no lift is mandatory; the muscle knows tension, not exercise names.</div>
+</div></body></html>

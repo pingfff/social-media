@@ -1,0 +1,10 @@
+{
+  "target_min": 60,
+  "sessions": {
+    "Upper A (Mon)": {"sets": 11, "superset_pairs": 0, "exercises": 4},
+    "Lower A (Tue)": {"sets": 14, "superset_pairs": 0, "exercises": 5},
+    "Upper B (Thu)": {"sets": 13, "superset_pairs": 1, "exercises": 5},
+    "Lower B (Fri)": {"sets": 14, "superset_pairs": 0, "exercises": 5},
+    "Arms+Delts (Sat)": {"sets": 18, "superset_pairs": 2, "exercises": 8}
+  }
+}

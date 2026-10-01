@@ -1,0 +1,174 @@
+# Second Gear
+
+**Lifter:** [intermediate](../profiles/intermediate.md) · **Level:** Intermediate (1–3 yrs) · **Goal:** hypertrophy · **Split:** Upper/Lower A+B, 4 days/wk (Mon/Tue/Thu/Fri) · **Session target:** 75 min · **Length:** 12 weeks = 2 blocks with deloads
+
+**What this program is:** Four sessions a week — two upper, two lower — alternating a chest-led upper day with a back-led one so each pull and push gets a fresh day. Most muscles get 10–13 hard sets a week, which is the growth zone for someone with a year or more of training. Block 1 (weeks 1–5) progresses by adding reps every week; week 5 is an easy deload. Block 2 (weeks 6–12) switches to adding a set per week instead, finishing with a deload at week 12. You'll log every set — the numbers in that log decide when to push and when to back off, not soreness or motivation.
+
+## 1. Weekly schedule
+
+| Day | Session |
+|---|---|
+| Mon | Upper A (chest-led) |
+| Tue | Lower A (quad-led) |
+| Wed | Rest |
+| Thu | Upper B (back-led) |
+| Fri | Lower B (hinge-led, deadlift day) |
+| Sat | Rest |
+| Sun | Rest |
+
+Synchronous U/L with mid-week rest — the intermediate default ["the sweet spot for intermediates", T22]. Deadlifts sit on Friday before the weekend, the most rest days [T14]. Upper days alternate push-biased/back-biased to avoid fatigue interference [T17]. Never more than 2 consecutive training days (rule: ≤3) [T20]; 48–72 h between repeat muscle groups [T9].
+
+## 2. Session tables
+
+Warm-ups: 1–2 light back-to-back sets before the first exercise per muscle — never counted as work sets [T4, T5]. Superset rows share one 2-min rest.
+
+### Upper A (Mon) — chest-led
+
+| # | Exercise | Sets × Reps | RIR | Rest | Notes |
+|---|----------|-------------|-----|------|-------|
+| 1 | Barbell Bench Press | 3 × 6–10 | 1–3 | 2 min | Heavy free-weight compound: stay 1–3 RIR even on the last set [T07-effort]. Alt: machine chest press |
+| 2 | Chest-Supported Row | 3 × 8–12 | 1–2 | 2 min | Upper back; no lower-back load [T17]. Alt: machine row, single-arm DB row |
+| 3 | Incline DB Press | 3 × 8–12 | 1–2 | 2 min | Sternum up, deep elbow stretch [T3]. Alt: incline Smith/machine press [T5] |
+| 4 | Lat Pulldown | 3 × 8–12 | 1–2 | 2 min | Full stretch at the top [T3]. Alt: pull-up |
+| 5 | DB Lateral Raise | 3 × 12–15 | 0–1 | 2 min | Side delts get nothing from pressing [shoulders/5] |
+| 6 | **Superset** — A1 Rope Pushdown · A2 Hammer Curl | 3 × 10–15 each | 0–1 | 2 min (shared) | Antagonist pair: performance preserved, time saved [T4, T23] |
+
+### Lower A (Tue) — quad-led
+
+| # | Exercise | Sets × Reps | RIR | Rest | Notes |
+|---|----------|-------------|-----|------|-------|
+| 1 | Back Squat | 4 × 6–10 | 1–3 | 2 min | Full depth — lengthened position is the stimulus [T3]. Alt: hack squat, Smith squat [T5, T17] |
+| 2 | Romanian Deadlift | 3 × 8–10 | 1–3 | 2 min | Hinge function of the hams; hips back, flat back |
+| 3 | Seated Leg Curl | 3 × 10–15 | 0–1 | 2 min | Seated > lying for hams [legs/1] — knee-flexion function covered |
+| 4 | Standing Calf Raise | 3 × 10–15 | 0–1 | 2 min | Pause in the stretch (contradiction #10 noted in §7) |
+| 5 | Cable Crunch | 3 × 10–15 | 0–1 | 2 min | Hips still; spine flexes |
+
+### Upper B (Thu) — back-led
+
+| # | Exercise | Sets × Reps | RIR | Rest | Notes |
+|---|----------|-------------|-----|------|-------|
+| 1 | Pull-Up (weighted when ready) | 3 × 6–10 | 1–3 | 2 min | Deep stretch at the bottom [T3]. Alt: lat pulldown, cross-body pulldown [T3, T5] |
+| 2 | Machine Incline Press | 3 × 8–12 | 1–2 | 2 min | Machine = tension with less fatigue near the session's second half [T3, T4] |
+| 3 | Seated Cable Row | 3 × 8–12 | 1–2 | 2 min | Let the lats stretch fully forward each rep |
+| 4 | Pec Deck / Cable Crossover | 2 × 10–15 | 0–1 | 2 min | Finisher slot [T5]; stretch emphasis |
+| 5 | **Superset** — A1 Cable Lateral Raise · A2 Rear-Delt Fly | 3 × 12–15 each | 0–1 | 2 min (shared) | Different delt heads — non-competing pair [T4] |
+| 6 | **Superset** — A1 Overhead Triceps Extension · A2 Incline Curl | 3 × 10–15 each | 0–1 | 2 min (shared) | Overhead angle loads the triceps long head [arms/1]; incline curl = stretch [T5] |
+
+### Lower B (Fri) — hinge-led
+
+| # | Exercise | Sets × Reps | RIR | Rest | Notes |
+|---|----------|-------------|-----|------|-------|
+| 1 | Conventional Deadlift | 3 × 6–8 | 1–3 | 2 min | Before the most rest days (Fri + weekend) [T14]. Alt: trap-bar deadlift |
+| 2 | Leg Press | 3 × 10–12 | 1–2 | 2 min | Feet low & narrow for quad stimulus [T3]. Quad volume without squat fatigue [T5, T17] |
+| 3 | Lying Leg Curl | 3 × 10–15 | 0–1 | 2 min | Second weekly knee-flexion hit [legs/1] |
+| 4 | Hip Thrust | 3 × 8–12 | 1–2 | 2 min | Direct glute work; heavy indirect already from squats/hinges/DL |
+| 5 | Seated Calf Raise | 3 × 10–15 | 0–1 | 2 min | Different angle from Tuesday's standing raises [T6] |
+
+## 3. Weekly volume audit
+
+## Weekly volume audit (generated by volume-audit.py)
+
+| Muscle | Weekly sets | Per session | Landmark | Verdict |
+|---|---|---|---|---|
+| abs | 3 | 0/3/0/0 | 10–20 (generic) | at/below retention landmark (~3) — maintenance only |
+| back | 12 | 6/0/6/0 | 10–20 | ✅ growth band |
+| biceps | 6 | 3/0/3/0 | 3–6 | ✅ growth band |
+| calves | 6 | 0/3/0/3 | 10–20 (generic) | maintenance / minimal-growth zone (below 10–20 band) |
+| chest | 11 | 6/0/5/0 | 10–20 | ✅ growth band |
+| front delts | 6 | 3/0/3/0 | 10–20 (generic) | maintenance / minimal-growth zone (below 10–20 band) |
+| glutes | 8 | 0/4/0/4 | 10–20 | maintenance / minimal-growth zone (below 10–20 band) |
+| hamstrings | 12 | 0/6/0/6 | 10–20 | ✅ growth band |
+| quads | 10 | 0/7/0/3 | 10–20 | ✅ growth band |
+| rear delts | 3 | 0/0/3/0 | 10–20 (generic) | at/below retention landmark (~3) — maintenance only |
+| side delts | 6 | 3/0/3/0 | 12–16 | maintenance / minimal-growth zone (below 12–16 band) |
+| triceps | 6 | 3/0/3/0 | 3–6 | ✅ growth band |
+
+- **abs:** no per-muscle norm logged; direct work optional (e.g., roman-chair raises [legs/2])
+- **back:** count lats + upper back + floor pulls together; >25 working sets/wk = recovery risk for most [back/1]
+- **biceps:** DIRECT sets only; back work counts as indirect; tolerable up to ~10; specialization 9-14 [arms/3]
+- **calves:** contradiction #10: dedicated sets + 30-s stretch holds [legs/1] vs life-load theory, gym work mostly tendon health [legs/3]
+- **chest:** 2 sessions/wk endorsed; a single 25-set chest day rejected [chest/1]
+- **front delts:** mostly covered by chest pressing; direct work only if lagging
+- **glutes:** heavy indirect coverage from squats/hinges/unilateral work; direct thrusts/abduction optional
+- **hamstrings:** train BOTH functions: knee flexion (curls; seated > lying) + hip extension (hinges) [legs/1]
+- **quads:** generic large-muscle band; rectus femoris grows only from leg extensions regardless of total [legs/1, legs/2]
+- **rear delts:** contradiction #9: overrated if back training is proper [shoulders/2] vs prioritize-first [shoulders/3,4,6]; strong back volume overlaps heavily
+- **side delts:** 12-16 applies when delts are the PRIORITY (spread over 3 days); 6-8 = growth surplus for non-priority [T22]; overhead pressing does not build them [shoulders/5]
+- **triceps:** DIRECT sets only; pressing covers medial/lateral heads; overhead/stretch isolation covers the long head
+
+**Warnings**
+
+- abs: 3 sets/wk is at or below the retention landmark (~3) — atrophy risk for a growth goal [T22 via knowledge/02]
+- rear_delts: 3 sets/wk is at or below the retention landmark (~3) — atrophy risk for a growth goal [T22 via knowledge/02]
+
+*Counts are hard working sets only (warm-ups never count [T4]). Muscles marked (generic) have no muscle-specific landmark in the knowledge files — the 10–20 default from knowledge/02 was applied. Reconcile against the program's session tables before shipping.*
+## Session-length check (generated by session-length.py)
+
+| Session | Hard sets | Superset pairs | Exercises | Est. length | Verdict |
+|---|---|---|---|---|---|
+| Upper A (Mon) | 21 | 1 | 7 | ~69 min | ✅ fits |
+| Lower A (Tue) | 16 | 0 | 5 | ~54 min | ✅ fits |
+| Upper B (Thu) | 23 | 2 | 7 | ~72 min | ✅ fits |
+| Lower B (Fri) | 15 | 0 | 5 | ~51 min | ✅ fits |
+
+All sessions fit the 75-min budget at the standardized 2-min rest.
+
+*Model: 6 min warm-up + 45 s/set + 2-min rests (one shared rest per superset pair, none after the last set) + 1.5 min transition per additional exercise. Estimate, not a stopwatch — reconcile against the session tables before shipping.*
+
+Justification bullets (deliberate choices flagged, table unedited):
+- **Biceps/triceps counted direct-only** (3+3 each) per the landmark notes — back pulling and pressing contribute indirect arm volume on top (arms/1: indirect work counts toward arms; tolerable to ~10 [arms/3]).
+- **Abs 3 (at-retention warning):** accepted — direct ab work is optional when training is hard and progressive [legs/2 note]; kept as one slot, not a priority.
+- **Rear delts 3 (at-retention warning):** deliberate — contradiction #9 resolved toward "back training covers rear delts" [shoulders/2] given 12 back sets/wk; 3 direct sets held as insurance. Position stated per the contradiction policy.
+- **Front delts 6 (below generic band):** mostly covered by chest pressing [knowledge/02 note] — 6 counted from presses; more would be redundant.
+- **Calves 6 (below generic band):** minimal-growth surplus (6–8 zone [T22]); contradiction #10 — kept lean, not load-bearing.
+- **Side delts 6 (below 12–16):** 12–16 applies only when delts are the priority [shoulders/5, T22]; non-priority 6–8 growth surplus is the right zone here.
+- Audit file: [audits/intermediate-2026-09-22.json](audits/intermediate-2026-09-22.json)
+
+## 4. Block structure & progression (12 weeks)
+
+Level matrix: intermediate → 4 overload + 1 deload typical [T6]; one primary progression method per block.
+
+- **Week 1 (calibration):** loads land mid-range at **RIR 3** — progression room for the block [knowledge/04]. Log every set [T6].
+- **Weeks 2–4 (Block 1 overload, Method A — add reps):** add 1–2 reps per set each week at the same loads [T6]. When a set hits the top of its range on all sets, you add load next session and restart at the bottom (double progression) [T1, T2].
+- **Week 5 (deload):** halve every exercise's sets, keep loads (volume is this program's stressor [T15]). It should feel easy — that means you timed it right [T15].
+- **Weeks 6–11 (Block 2 overload, Method B — add sets):** something must change after every block [T6] — the lever switches from reps to sets: add 1 set per week to one upper and one lower exercise (cap 5 sets/exercise, then add to a different exercise [T6]); reps held at week-5 levels, double progression resumes from there.
+- **Week 12 (deload):** halve sets again, keep loads; end-of-block re-test: repeat week-6 loads on the main lifts and compare logged reps — that's the program's report card [T2].
+
+## 5. Deload plan
+
+Volume deload, matched to the stressor: **halve sets, keep loads** (≤5–10% load drop acceptable) [T15]. Weeks 5 and 12. No new exercises, no intensity techniques during deloads — training should feel easy [T15]. Symptom override: warning signs (beat up, soreness lingering, light weights heavy, no pump [T15, T20]) trigger the deload early regardless of the calendar.
+
+## 6. Autoregulation & adjustment triggers
+
+- Reps flat or down for 2 straight sessions on an exercise → previous volume too high: drop 1 set from it and rerun [T18, T8].
+- Reps moving → change nothing ["if you're progressing, it's the right amount of work", T16].
+- Stalled a full block → the block-2 set-addition lever or an exercise swap (after 2–5 blocks without a swap, or reps below ~6) [T6].
+- Joint pain on any movement → swap to the listed alternative immediately (first filter = injury/pain [T6]).
+- Log every set; the logbook is the judge — not soreness, pump, or motivation [T16, T18, T19].
+
+## 7. Design rationale & contradictions
+
+- **Decision-tree branch:** healthy intermediate, no complaints, 4 fixed days → Upper/Lower intermediate default [T22 via 07-tree]; Q21 preference (upper/lower) consistent; 75-min sessions fit U/L at 21–23 sets/session (gates green).
+- **12-week validation** (level matrix): 12 = Block 1 (4+1) + Block 2 (6 overload + 1 deload) — within the 3–6 overload-week range [T6].
+- **Volume:** 10–13 sets/wk majors — mid-band [T1, T6]; 2×/wk frequency every muscle; ≤7 sets/muscle/session, under the ~6–7 plateau line [T4, T22]; back 12 well under the 25 caution line [back/1].
+- **Contradictions touched** (knowledge/08 § Known Contradictions):
+  - **#9 rear delts:** took "covered by back training" [shoulders/2] over "prioritize first" [shoulders/3/4/6] — rationale: 12 back sets/wk, no delt priority stated.
+  - **#10 calves:** minimal sets with stretch pauses; both positions preserved, not averaged [legs/1 vs legs/3].
+  - **#11 failure training:** compound 1–3 RIR / isolation to failure split by exercise type [T3, T6 vs T21] — matches stated RIR habits (regularly 0–3 RIR).
+  - **#4 volume norms:** mid-band position (10–13) taken over the >10–12 diminishing-ROI reading [T1/T6 vs T22] — growth goal, good recovery, 20s.
+  - Rest standardized 2 min (vs 2–3 baseline, 4–5 heavy legs [knowledge/02]) — session budget and consistency.
+
+## 8. Assumptions
+
+Defaults applied by the intake script (none carried `[ns: defaulted]` / `[free text]` markers):
+
+- Priority muscles: none (default) — no specialization branch fired
+- Current program: none (default) → Step 0 audit skipped; mid-band start stands in
+- Weekly sets/muscle currently: unknown (default) — logbook calibrates
+- Progressed/stalled last 3 mo: — (default)
+- Session-end state: fresh (default)
+- RIR habits: regularly 0–3 RIR (default) — effort layer consistent with it
+- Exercise likes/dislikes: no strong feelings (default)
+- Frequency preference: enjoys hitting muscles often (default) — consistent with 2×/wk U/L
+- Deload preference: scheduled (default) — weeks 5 and 12
+- Age "20s", recovery good, maintenance calories, full gym, no injuries — as interviewed

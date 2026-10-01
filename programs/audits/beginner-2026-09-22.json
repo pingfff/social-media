@@ -1,0 +1,12 @@
+{
+  "chest": [3, 0, 3],
+  "back": [3, 3, 3],
+  "quads": [3, 2, 3],
+  "hamstrings": [2, 3, 0],
+  "front_delts": [0, 3, 3],
+  "side_delts": [2, 0, 2],
+  "biceps": [2, 2, 0],
+  "triceps": [0, 4, 2],
+  "calves": [0, 0, 2],
+  "abs": [2, 0, 0]
+}

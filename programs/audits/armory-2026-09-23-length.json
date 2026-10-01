@@ -1,0 +1,11 @@
+{
+  "target_min": 60,
+  "sessions": {
+    "Torso A + arms (Mon)": {"sets": 17, "superset_pairs": 2, "exercises": 6},
+    "Limb (Tue)": {"sets": 17, "superset_pairs": 1, "exercises": 6},
+    "Torso B (Wed)": {"sets": 18, "superset_pairs": 1, "exercises": 5},
+    "Limb (Thu)": {"sets": 17, "superset_pairs": 1, "exercises": 6},
+    "Torso A + arms (Fri)": {"sets": 17, "superset_pairs": 2, "exercises": 6},
+    "Limb (Sat)": {"sets": 17, "superset_pairs": 1, "exercises": 6}
+  }
+}

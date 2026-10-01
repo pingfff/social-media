@@ -1,0 +1,8 @@
+{
+  "target_min": 60,
+  "sessions": {
+    "A (Mon)": {"sets": 15, "superset_pairs": 0, "exercises": 6},
+    "B (Wed)": {"sets": 13, "superset_pairs": 0, "exercises": 5},
+    "C (Fri)": {"sets": 15, "superset_pairs": 0, "exercises": 6}
+  }
+}
