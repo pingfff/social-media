@@ -43,7 +43,6 @@ program-design questions. There is no code, no build system, no tests.
 - `business/` — coaching business deliverables (PDF guides, flagship program
   manuscripts + build scripts).
 - `pingliftsfitness-site/` — website assets.
-- `slides/` — slide decks and their generators.
 - `.agents/skills/` — repo skills:
   - `split-creator/` — workout-split design (intake → decision tree →
     program into `programs/`).

@@ -16,7 +16,6 @@ of truth for social-media content, coaching programs, and program-design Q&A.
 | `programs/` | Generated workout programs (`<name>-<date>.md`), audits, and lifter profiles |
 | `business/` | Coaching business deliverables (PDF guides, flagship program) |
 | `pingliftsfitness-site/` | Website assets |
-| `slides/` | Slide decks and generators |
 | `.agents/skills/` | Repo skills: `split-creator` (program design), `reel-graphics` (vertical Instagram graphics), `media-intake` (find + transcribe new sources) |
 
 ## Conventions
